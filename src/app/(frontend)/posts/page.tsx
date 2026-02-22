@@ -18,7 +18,7 @@ export default async function Page() {
     collection: 'posts',
     depth: 1,
     limit: 12,
-    overrideAccess: true,
+    overrideAccess: false,
     select: {
       title: true,
       slug: true,

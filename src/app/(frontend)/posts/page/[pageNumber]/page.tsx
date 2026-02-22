@@ -27,16 +27,10 @@ export default async function Page({ params: paramsPromise }: Args) {
 
   const posts = await payload.find({
     collection: 'posts',
-    depth: 0,
+    depth: 1,
     limit: 12,
     page: sanitizedPageNumber,
-    overrideAccess: true,
-    select: {
-      title: true,
-      slug: true,
-      categories: true,
-      meta: true,
-    },
+    overrideAccess: false,
   })
 
   return (
@@ -79,7 +73,7 @@ export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
   const { totalDocs } = await payload.count({
     collection: 'posts',
-    overrideAccess: true,
+    overrideAccess: false,
   })
 
   const totalPages = Math.ceil(totalDocs / 10)
