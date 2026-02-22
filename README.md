@@ -42,6 +42,14 @@
 
 This boilerplate is a pre-configured, ready-to-deploy solution for Payload CMS as a website builder. It includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website. This template is optimized for seamless deployment on [Railway](https://railway.app?referralCode=-Yg50p), and uses PostgreSQL for both local development and production environments.
 
+## Version Info
+
+- **Payload CMS**: `3.77.0` (resolved in `pnpm-lock.yaml`)
+- **Next.js**: `15.4.11`
+- **Node.js**: `^18.20.2 || >=20.9.0`
+
+Note: `package.json` uses `latest` for Payload packages. Actual installed versions are pinned by `pnpm-lock.yaml`.
+
 ## Preconfigured Features & Integrations
 
 - **Authentication**: Robust user authentication system
