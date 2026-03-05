@@ -3,132 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ======================================================= -->
-<!-- PRIMARY META (Home) — swapped per page via JS           -->
-<!-- ======================================================= -->
 <title>The BOX | AI-Powered Innovation Platform</title>
-<meta name="description" content="The BOX brings together market data, customer intelligence, and your internal constraints to surface opportunities, generate ideas, and help you test them and bring them to market. From brief to validated concept in weeks.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Quartz Labs">
-<link rel="canonical" href="https://www.theboxinnovation.ai/">
-
-<!-- Open Graph (shared/social) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="The BOX by Quartz Labs">
-<meta property="og:title" content="The BOX | AI-Powered Innovation Platform">
-<meta property="og:description" content="The BOX brings together market data, customer intelligence, and your internal constraints to surface opportunities, generate ideas, and help you test them and bring them to market. From brief to validated concept in weeks.">
-<meta property="og:url" content="https://www.theboxinnovation.ai/">
-<meta property="og:image" content="https://www.theboxinnovation.ai/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="en_GB">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@QuartzLabsAI">
-<meta name="twitter:title" content="The BOX | AI-Powered Innovation Platform">
-<meta name="twitter:description" content="The BOX brings together market data, customer intelligence, and your internal constraints to surface opportunities, generate ideas, and help you test them and bring them to market. From brief to validated concept in weeks.">
-<meta name="twitter:image" content="https://www.theboxinnovation.ai/og-image.png">
-
-<!-- Structured Data: SoftwareApplication -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "The BOX",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "description": "AI-powered innovation platform that brings together market data, customer intelligence, and internal constraints to surface opportunities and help teams launch products faster.",
-  "url": "https://www.theboxinnovation.ai/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Quartz Labs",
-    "url": "https://www.theboxinnovation.ai/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "86-90 Paul Street",
-      "addressLocality": "London",
-      "postalCode": "EC2A 4NE",
-      "addressCountry": "GB"
-    }
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "description": "Contact for pricing"
-  }
-}
-</script>
-
-<!-- Structured Data: Organization -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Quartz Labs",
-  "url": "https://www.theboxinnovation.ai/",
-  "logo": "https://www.theboxinnovation.ai/logo.png",
-  "sameAs": [
-    "https://www.linkedin.com/company/quartz-labs"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "86-90 Paul Street",
-    "addressLocality": "London",
-    "postalCode": "EC2A 4NE",
-    "addressCountry": "GB"
-  }
-}
-</script>
-
-<!-- Structured Data: FAQ (Home page FAQs — duplicated from How It Works) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How does digital twin testing work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Digital twins create accurate customer representations based on real qualitative and quantitative research data with 85% accuracy (Stanford). Unlike hallucinated personas, ours are grounded in real data via The Mirror platform, making them reliable for R&D, marketing, and NPD decisions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What about data security?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All data encrypted in transit and at rest. ISO 27001 and SOC2 certifications in progress. GDPR compliant. Your data never trains our AI models."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How accurate are the AI-generated insights?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sourced from verified, authoritative sources with full attribution. The methodology includes human validation at key checkpoints. You can always trace insights back to their sources."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's different from ChatGPT or other AI tools?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The BOX is constraint-aware, sector-specific, collaborative, and accumulative. Generic AI is a stateless conversation that forgets everything. The BOX is an innovation operating system that gets smarter the more you use it."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Preconnect for performance -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,800;1,9..144,400&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --ink: #0d0d1a;
@@ -149,6 +25,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--paper);line-
 img{max-width:100%;display:block}
 a{color:var(--accent);text-decoration:none}
 
+/* === NAV with dark/light states === */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,box-shadow .4s}
 .nav.nav--dark{background:var(--ink);border-bottom:1px solid rgba(255,255,255,0.08)}
 .nav.nav--light{background:rgba(250,250,247,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:0 1px 8px rgba(0,0,0,0.04)}
@@ -176,15 +53,18 @@ a{color:var(--accent);text-decoration:none}
 .nav--light .nav-cta{background:linear-gradient(135deg,#5c6bc0,#00695c);color:#fff;border:1px solid rgba(92,107,192,0.3);box-shadow:0 0 16px rgba(92,107,192,0.2)}
 .nav--light .nav-cta:hover{background:linear-gradient(135deg,#7986cb,#26a69a);box-shadow:0 0 24px rgba(92,107,192,0.4)}
 
+/* === PAGE CONTAINER === */
 .page{display:none}
 .page.active{display:block}
 
+/* === SECTION UTILS === */
 .section{padding:100px 32px}
 .section-inner{max-width:1100px;margin:0 auto}
 .section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
 .section-title{font-family:var(--font-display);font-size:2.8rem;font-weight:700;line-height:1.15;letter-spacing:-.03em;margin-bottom:20px}
 .section-sub{font-size:1.15rem;color:var(--muted);max-width:640px;line-height:1.7}
 
+/* === HERO === */
 .hero{padding:160px 32px 100px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-40%;right:-20%;width:800px;height:800px;background:radial-gradient(circle,rgba(36,86,224,0.15) 0%,transparent 70%);pointer-events:none}
 .hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1}
@@ -203,6 +83,7 @@ a{color:var(--accent);text-decoration:none}
 .hero-trust-logo{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px 18px;font-size:.8rem;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:.02em}
 .hero-trust-text{font-size:.8rem;color:rgba(255,255,255,0.35)}
 
+/* === SUCCESS BAR === */
 .success-bar{background:var(--success-light);border-bottom:1px solid #c8e8d8}
 .success-inner{max-width:1100px;margin:0 auto;padding:28px 32px;display:flex;align-items:flex-start;gap:20px}
 .success-check{width:32px;height:32px;background:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
@@ -212,6 +93,7 @@ a{color:var(--accent);text-decoration:none}
 .success-deliverables{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
 .success-tag{background:#fff;border:1px solid #c8e8d8;border-radius:20px;padding:4px 14px;font-size:.78rem;font-weight:500;color:#1a6b3a}
 
+/* === PROBLEM-AGITATE === */
 .problems{background:var(--paper)}
 .problems-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;margin-top:48px}
 .problem-card{padding:36px 28px;border-radius:16px;border:1px solid var(--border);background:#fff;position:relative;overflow:hidden}
@@ -224,12 +106,16 @@ a{color:var(--accent);text-decoration:none}
 .problem-transition p{font-family:var(--font-display);font-size:1.5rem;font-weight:500;line-height:1.5;color:var(--ink);font-style:italic}
 .problem-transition p strong{color:var(--accent);font-style:normal;font-weight:700}
 
+/* === CONSTRAINT STRIP === */
 .constraint-strip{background:var(--paper);padding:80px 32px;text-align:center;border-bottom:1px solid var(--border)}
 .constraint-dims{display:flex;justify-content:center;gap:12px;margin-top:32px;flex-wrap:wrap}
 .constraint-dim{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 22px;text-align:center;min-width:140px}
 .constraint-dim-icon{font-size:1.4rem;margin-bottom:6px}
 .constraint-dim-label{font-size:.82rem;font-weight:600;color:var(--ink)}
 
+/* ================================ */
+/* STACKING CARD SCROLL EFFECT      */
+/* ================================ */
 .stacking-cards{position:relative;padding:0 32px}
 .stacking-cards-header{max-width:1100px;margin:0 auto;padding:100px 0 40px}
 .stacking-cards-track{height:calc(100vh * 6);position:relative}
@@ -248,6 +134,7 @@ a{color:var(--accent);text-decoration:none}
 .sc-visual-mock{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
 .sc-visual-mock .mock-label{position:absolute;bottom:24px;left:24px;right:24px;font-size:.78rem;color:rgba(255,255,255,0.5);background:rgba(0,0,0,0.3);padding:8px 14px;border-radius:8px;backdrop-filter:blur(4px);font-family:var(--font-body)}
 
+/* Card themes */
 .card-insights .sc-label{background:var(--accent-light);color:var(--accent)}
 .card-insights .sc-visual{background:linear-gradient(135deg,#0d1b2a 0%,#1a237e 100%)}
 .card-ideas .sc-label{background:#fff3e0;color:#e67e22}
@@ -259,6 +146,7 @@ a{color:var(--accent);text-decoration:none}
 .card-twins .sc-label{background:#e0f2f1;color:#00695c}
 .card-twins .sc-visual{background:linear-gradient(135deg,#002a20 0%,#00695c 100%)}
 
+/* === EXPERT AGENTS === */
 .agents-section{background:var(--warm);padding:80px 32px}
 .agents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
 .agent-card{background:#fff;border-radius:12px;padding:24px 20px;border:1px solid var(--border);display:flex;gap:14px;align-items:flex-start}
@@ -266,6 +154,7 @@ a{color:var(--accent);text-decoration:none}
 .agent-card h4{font-size:.88rem;font-weight:700;margin-bottom:3px}
 .agent-card p{font-size:.8rem;color:var(--muted);line-height:1.5}
 
+/* === VALUE STACK === */
 .value-stack{background:#fff}
 .value-tiers{display:flex;flex-direction:column;gap:0;margin-top:48px}
 .value-tier{display:grid;grid-template-columns:80px 1fr auto;align-items:center;gap:24px;padding:32px 0;border-bottom:1px solid var(--border)}
@@ -285,6 +174,7 @@ a{color:var(--accent);text-decoration:none}
 .value-total-right .old-way{font-size:.85rem;color:rgba(255,255,255,0.4);text-decoration:line-through;margin-bottom:4px}
 .value-total-right .new-way{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:#8ba8ff}
 
+/* === SOCIAL PROOF === */
 .social-proof{background:var(--warm)}
 .testimonials{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:48px}
 .testimonial{background:#fff;border-radius:16px;padding:32px 28px;border:1px solid var(--border);position:relative}
@@ -298,6 +188,7 @@ a{color:var(--accent);text-decoration:none}
 .logos-row{display:flex;align-items:center;justify-content:center;gap:40px;margin-top:48px;padding-top:40px;border-top:1px solid var(--border);flex-wrap:wrap}
 .logo-placeholder{font-size:.85rem;font-weight:700;color:rgba(0,0,0,0.18);letter-spacing:.06em;text-transform:uppercase;padding:8px 0}
 
+/* === COMPARISON === */
 .comparison{background:#fff;padding:80px 32px}
 .comp-table{width:100%;border-collapse:separate;border-spacing:0;margin-top:40px;border-radius:16px;overflow:hidden;border:1px solid var(--border)}
 .comp-table th,.comp-table td{padding:16px 18px;text-align:left;font-size:.85rem;border-bottom:1px solid var(--border)}
@@ -307,6 +198,7 @@ a{color:var(--accent);text-decoration:none}
 .comp-table tbody tr:last-child td{border-bottom:none}
 .comp-table tbody td:first-child{font-weight:600;color:var(--ink);background:var(--paper)}
 
+/* === USE CASES === */
 .use-cases{background:var(--paper);padding:80px 32px}
 .use-cases-list{display:flex;flex-direction:column;gap:20px;margin-top:40px}
 .use-case{display:grid;grid-template-columns:40px 1fr auto;gap:20px;align-items:center;padding:24px 28px;background:#fff;border-radius:14px;border:1px solid var(--border)}
@@ -314,6 +206,7 @@ a{color:var(--accent);text-decoration:none}
 .use-case-quote{font-family:var(--font-display);font-size:.98rem;font-weight:500;font-style:italic;line-height:1.5}
 .use-case-role{font-size:.78rem;color:var(--muted);white-space:nowrap;text-align:right}
 
+/* === TRANSFORMATION === */
 .transformation{background:#fff}
 .transform-stages{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;position:relative}
 .transform-stages::before{content:'';position:absolute;top:40px;left:60px;right:60px;height:2px;background:linear-gradient(90deg,var(--accent),var(--success));z-index:0}
@@ -327,6 +220,7 @@ a{color:var(--accent);text-decoration:none}
 .stage-desc{font-size:.82rem;color:var(--muted);line-height:1.5;max-width:200px;margin:0 auto}
 .stage-time{font-size:.75rem;font-weight:600;color:var(--accent);margin-top:8px}
 
+/* === SECONDARY CTA === */
 .secondary-cta{background:var(--ink);color:#fff;text-align:center;padding:80px 32px;position:relative;overflow:hidden}
 .secondary-cta::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at center,rgba(36,86,224,0.12) 0%,transparent 60%)}
 .secondary-cta .section-inner{position:relative;z-index:1}
@@ -343,6 +237,8 @@ a{color:var(--accent);text-decoration:none}
 .btn-glow{background:#fff;color:var(--ink);padding:16px 40px;border-radius:8px;font-weight:700;font-size:1rem;border:none;cursor:pointer;box-shadow:0 0 40px rgba(36,86,224,0.3);transition:all .25s;font-family:var(--font-body)}
 .btn-glow:hover{transform:translateY(-2px);box-shadow:0 0 60px rgba(36,86,224,0.4)}
 
+
+/* === CASE SLIDER === */
 .case-slider{position:relative;overflow:hidden;margin-top:40px}
 .case-track{display:flex;gap:0;transition:transform .5s cubic-bezier(.22,1,.36,1);will-change:transform}
 .case-slide{min-width:100%;display:grid;grid-template-columns:1fr 1fr;min-height:400px;border-radius:20px;overflow:hidden}
@@ -362,6 +258,7 @@ a{color:var(--accent);text-decoration:none}
 .case-dot{width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .2s}
 .case-dot.active{background:var(--accent);width:24px;border-radius:4px}
 
+/* === STEP CARDS (How It Works) === */
 .step-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px;counter-reset:step}
 .step-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
 .step-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.06)}
@@ -371,6 +268,7 @@ a{color:var(--accent);text-decoration:none}
 .step-card p{font-size:.85rem;color:var(--muted);line-height:1.55}
 .step-card.step-wide{grid-column:1 / -1}
 
+/* === FAQ ACCORDION === */
 .faq-list{max-width:740px;margin-top:32px}
 .faq-item{border-bottom:1px solid var(--border)}
 .faq-q{padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:16px}
@@ -381,6 +279,7 @@ a{color:var(--accent);text-decoration:none}
 .faq-item.open .faq-a{max-height:300px}
 .faq-a p{padding:0 0 20px;font-size:.88rem;color:var(--muted);line-height:1.65}
 
+/* === PRICING TABLES === */
 .pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
 .pricing-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:36px 28px;display:flex;flex-direction:column;position:relative;transition:transform .2s,box-shadow .2s}
 .pricing-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.06)}
@@ -398,6 +297,8 @@ a{color:var(--accent);text-decoration:none}
 .pricing-cta-secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
 .pricing-cta-secondary:hover{background:var(--accent-light)}
 
+
+/* === FLOW SEQUENCE (How It Works) === */
 .flow-sequence{position:relative;padding:40px 0;max-width:900px;margin:0 auto}
 .flow-line{position:absolute;left:50%;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#1a237e,#00695c,#8e24aa);transform:translateX(-50%);border-radius:2px}
 .flow-step{display:flex;align-items:flex-start;margin-bottom:40px;position:relative;opacity:0;transition:opacity .6s ease,transform .6s ease}
@@ -415,6 +316,7 @@ a{color:var(--accent);text-decoration:none}
 .flow-video-placeholder{background:var(--paper);border:2px dashed var(--border);border-radius:10px;padding:48px 20px;text-align:center;font-size:.85rem;color:var(--muted);cursor:pointer;transition:all .2s}
 .flow-video-placeholder:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
 
+/* === FOOTER === */
 .footer{background:var(--ink);color:rgba(255,255,255,0.5);padding:64px 32px 32px;border-top:1px solid rgba(255,255,255,0.05)}
 .footer-inner{max-width:1100px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
@@ -426,11 +328,13 @@ a{color:var(--accent);text-decoration:none}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;flex-wrap:wrap;gap:12px}
 .footer-legal a{margin-left:20px}
 
+/* === INNER PAGE HERO === */
 .inner-hero{padding:140px 32px 80px;background:var(--ink);color:#fff;position:relative}
 .inner-hero .hero-eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:20px}
 .inner-hero h1{font-family:var(--font-display);font-size:3rem;font-weight:800;line-height:1.12;letter-spacing:-.03em;margin-bottom:20px;max-width:700px}
 .inner-hero .inner-sub{font-size:1.15rem;color:rgba(255,255,255,0.6);max-width:600px;line-height:1.7}
 
+/* === INNER PAGE SECTIONS === */
 .inner-section{padding:80px 32px}
 .inner-section:nth-child(even){background:#fff}
 .inner-section h2{font-family:var(--font-display);font-size:2rem;font-weight:700;margin-bottom:16px;letter-spacing:-.02em}
@@ -442,9 +346,11 @@ a{color:var(--accent);text-decoration:none}
 .inner-back{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:500;color:var(--accent);margin-bottom:24px;cursor:pointer}
 .inner-back:hover{text-decoration:underline}
 
+/* === DESIGNER NOTE === */
 .designer-note{background:#fffde7;border:1px dashed #f0c040;border-radius:8px;padding:10px 16px;font-size:.78rem;color:#8a7020;margin-top:12px}
 .designer-note::before{content:'\1F3A8 Designer: ';font-weight:700}
 
+/* === RESPONSIVE === */
 @media(max-width:900px){
   .hero h1{font-size:2.5rem}
   .section-title{font-size:2rem}
@@ -461,9 +367,9 @@ a{color:var(--accent);text-decoration:none}
 <body>
 
 <!-- ===== NAV ===== -->
-<nav class="nav nav--dark" id="mainNav" role="navigation" aria-label="Main navigation">
+<nav class="nav nav--dark" id="mainNav">
   <div class="nav-inner">
-    <div class="nav-logo" onclick="goTo('home')" role="link" aria-label="The BOX — Home">The <span>BOX</span></div>
+    <div class="nav-logo" onclick="goTo('home')">The <span>BOX</span></div>
     <div class="nav-links">
       <a onclick="goTo('home')">Platform</a>
       <a onclick="goTo('how-it-works')">How It Works</a>
@@ -482,7 +388,7 @@ a{color:var(--accent);text-decoration:none}
           <a onclick="goTo('resources')">All Resources</a>
           <a onclick="goTo('resources')">Free Tools</a>
           <a onclick="goTo('resources')">Guides</a>
-          <a href="https://www.theboxinnovation.ai/blog" target="_blank" rel="noopener">Blog</a>
+          <a href="https://www.theboxinnovation.ai/blog" target="_blank">Blog</a>
         </div>
       </span>
       <a onclick="goTo('about')">About</a>
@@ -494,20 +400,20 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: HOME                                                -->
 <!-- ======================================================= -->
-<div class="page active" id="page-home" role="main">
+<div class="page active" id="page-home">
 
 <!-- HERO -->
-<section class="hero" data-nav="dark" aria-labelledby="hero-heading">
+<section class="hero" data-nav="dark">
   <div class="hero-inner">
     <div class="hero-eyebrow">AI-Powered Innovation Platform</div>
-    <h1 id="hero-heading">95% of innovations fail.<br>Build the right thing <em>with The BOX.</em></h1>
+    <h1>95% of innovations fail.<br>Build the right thing <em>with The BOX.</em></h1>
     <p class="hero-sub">The BOX brings together market data, customer intelligence, and your internal constraints to surface opportunities, generate ideas, and help you test them and bring them to market. From brief to validated concept in weeks.</p>
     <div class="hero-ctas">
       <button class="btn-primary" onclick="goTo('demo')">Book a Demo</button>
       <button class="btn-secondary" onclick="goTo('how-it-works')">See How It Works &rarr;</button>
     </div>
     <div class="hero-trust">
-      <div class="hero-trust-logos" aria-label="Trusted by">
+      <div class="hero-trust-logos">
         <div class="hero-trust-logo">WestRock Coffee</div>
         <div class="hero-trust-logo">Strauss</div>
         <div class="hero-trust-logo">ZF</div>
@@ -524,7 +430,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- SUCCESS BAR -->
 <div class="success-bar">
   <div class="success-inner">
-    <div class="success-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+    <div class="success-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
     <div class="success-content">
       <h3>When you use The BOX, you get a complete innovation engine.</h3>
       <p>Not just ideas. A full chain from market intelligence to validated, prioritized, financially modeled concepts.</p>
@@ -542,25 +448,25 @@ a{color:var(--accent);text-decoration:none}
 </div>
 
 <!-- PROBLEM-AGITATE -->
-<section class="section problems" aria-labelledby="problems-heading">
+<section class="section problems">
   <div class="section-inner">
     <div class="section-label">The reality of innovation today</div>
-    <h2 class="section-title" id="problems-heading">Three reasons your best ideas never make it to market.</h2>
+    <h2 class="section-title">Three reasons your best ideas never make it to market.</h2>
     <div class="problems-grid">
       <div class="problem-card">
-        <div class="problem-num" aria-hidden="true">1</div>
+        <div class="problem-num">1</div>
         <div class="problem-stat">80%</div>
         <h3>Most of your NPD budget is spent on ideas that were never going to work.</h3>
         <p>Nobody checked feasibility against your actual production lines, regulatory requirements, or supply chain before committing R&amp;D resources. By the time someone does, months and budgets have been burned on concepts that were dead on arrival.</p>
       </div>
       <div class="problem-card">
-        <div class="problem-num" aria-hidden="true">2</div>
+        <div class="problem-num">2</div>
         <div class="problem-stat">18mo</div>
         <h3>Your process takes 18 months. The market moved in 6.</h3>
         <p>By the time R&amp;D validates, marketing positions, and finance approves, the trend you spotted is already on a competitor's shelf. Sequential handoffs between teams turn a good insight into a stale opportunity.</p>
       </div>
       <div class="problem-card">
-        <div class="problem-num" aria-hidden="true">3</div>
+        <div class="problem-num">3</div>
         <div class="problem-stat">0%</div>
         <h3>Your innovation knowledge walks out the door every evening.</h3>
         <p>Insights live in people's heads, old decks, and email threads. Every new project starts from scratch. The research your team did 18 months ago is buried in a Google Drive folder nobody remembers. Nothing compounds.</p>
@@ -578,18 +484,20 @@ a{color:var(--accent);text-decoration:none}
     <div class="section-label">Our methodology</div>
     <h2 class="section-title" style="max-width:700px;margin:0 auto 16px">Constraints don't kill innovation.<br>Ignoring them does.</h2>
     <p class="section-sub" style="margin:0 auto;text-align:center">Ideas aren't filtered against reality after the fact. They're born from it. This is why we call it The BOX.</p>
-    <div class="constraint-dims" role="list" aria-label="Constraint dimensions">
-      <div class="constraint-dim" role="listitem"><div class="constraint-dim-icon" aria-hidden="true">👥</div><div class="constraint-dim-label">Client</div></div>
-      <div class="constraint-dim" role="listitem"><div class="constraint-dim-icon" aria-hidden="true">📋</div><div class="constraint-dim-label">Regulatory</div></div>
-      <div class="constraint-dim" role="listitem"><div class="constraint-dim-icon" aria-hidden="true">⚙️</div><div class="constraint-dim-label">Capabilities</div></div>
-      <div class="constraint-dim" role="listitem"><div class="constraint-dim-icon" aria-hidden="true">🔗</div><div class="constraint-dim-label">Supply Chain</div></div>
-      <div class="constraint-dim" role="listitem"><div class="constraint-dim-icon" aria-hidden="true">🏢</div><div class="constraint-dim-label">Organization</div></div>
+    <div class="constraint-dims">
+      <div class="constraint-dim"><div class="constraint-dim-icon">👥</div><div class="constraint-dim-label">Client</div></div>
+      <div class="constraint-dim"><div class="constraint-dim-icon">📋</div><div class="constraint-dim-label">Regulatory</div></div>
+      <div class="constraint-dim"><div class="constraint-dim-icon">⚙️</div><div class="constraint-dim-label">Capabilities</div></div>
+      <div class="constraint-dim"><div class="constraint-dim-icon">🔗</div><div class="constraint-dim-label">Supply Chain</div></div>
+      <div class="constraint-dim"><div class="constraint-dim-icon">🏢</div><div class="constraint-dim-label">Organization</div></div>
     </div>
     <div class="designer-note">Use the crystal/box visual from constraints deck. Goal + 5 constraints = Breakthrough.</div>
   </div>
 </div>
 
-<!-- STACKING FEATURE CARDS -->
+<!-- ======================= -->
+<!-- STACKING FEATURE CARDS  -->
+<!-- ======================= -->
 <div class="stacking-cards" id="stackingCards">
   <div class="stacking-cards-header">
     <div class="section-label">What The BOX does</div>
@@ -598,127 +506,133 @@ a{color:var(--accent);text-decoration:none}
   </div>
   <div class="stacking-cards-track" id="stackTrack">
 
+    <!-- Card 1: Insights -->
     <div class="stacking-card-sticky" data-card="0">
-      <article class="stacking-card card-insights">
+      <div class="stacking-card card-insights">
         <div class="sc-content">
           <div class="sc-label">01 &mdash; Research &amp; Insights</div>
           <h2>Top-notch insights and ideas in minutes.</h2>
           <p>AI agents search dozens of online and proprietary sources, identify key market insights, and generate hundreds of ideas. Research that would take months, compressed into minutes.</p>
           <div class="sc-features">
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:var(--accent)" aria-hidden="true"></div><strong>Patent scanning</strong> across global databases</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:var(--accent)" aria-hidden="true"></div><strong>Trend detection</strong> via web, social, academic</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:var(--accent)" aria-hidden="true"></div><strong>Competitor analysis</strong> with source attribution</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:var(--accent)"></div><strong>Patent scanning</strong> across global databases</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:var(--accent)"></div><strong>Trend detection</strong> via web, social, academic</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:var(--accent)"></div><strong>Competitor analysis</strong> with source attribution</div>
           </div>
         </div>
-        <div class="sc-visual" aria-hidden="true">
+        <div class="sc-visual">
           <div class="sc-visual-mock">🔍<div class="mock-label">Screenshot: Sources panel with insight cards</div></div>
         </div>
-      </article>
+      </div>
     </div>
 
+    <!-- Card 2: Ideas + Enrichment -->
     <div class="stacking-card-sticky" data-card="1">
-      <article class="stacking-card card-ideas">
+      <div class="stacking-card card-ideas">
         <div class="sc-content">
           <div class="sc-label">02 &mdash; Ideation &amp; Enrichment</div>
           <h2>Let the best ideas rise to the top.</h2>
           <p>Every idea is enriched with assumptions, financial estimates, and expert analysis. Impact vs. effort scoring ensures everyone's priorities count.</p>
           <div class="sc-features">
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#e67e22" aria-hidden="true"></div><strong>6 expert agents</strong> loaded with your context</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#e67e22" aria-hidden="true"></div><strong>Auto business cases</strong> with Total Economic Value</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#e67e22" aria-hidden="true"></div><strong>Transparent scoring</strong> with configurable drivers</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#e67e22"></div><strong>6 expert agents</strong> loaded with your context</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#e67e22"></div><strong>Auto business cases</strong> with Total Economic Value</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#e67e22"></div><strong>Transparent scoring</strong> with configurable drivers</div>
           </div>
         </div>
-        <div class="sc-visual" aria-hidden="true">
+        <div class="sc-visual">
           <div class="sc-visual-mock">💡<div class="mock-label">Screenshot: Idea popup with L1/L2 assumptions + expert tabs</div></div>
         </div>
-      </article>
+      </div>
     </div>
 
+    <!-- Card 3: Collaboration -->
     <div class="stacking-card-sticky" data-card="2">
-      <article class="stacking-card card-collab">
+      <div class="stacking-card card-collab">
         <div class="sc-content">
           <div class="sc-label">03 &mdash; Collaboration &amp; Alignment</div>
           <h2>Fully collaborative, fit-for-enterprise.</h2>
           <p>Innovation is a team sport. Email-based stakeholder input, open challenges for org-wide participation, transparent prioritization. Decisions stop dying in meeting rooms.</p>
           <div class="sc-features">
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#1a8c5a" aria-hidden="true"></div><strong>Email collaboration</strong> &mdash; no account needed</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#1a8c5a" aria-hidden="true"></div><strong>Open challenges</strong> &mdash; ideas from anywhere</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#1a8c5a" aria-hidden="true"></div><strong>Upvote/downvote</strong> &mdash; democratic prioritization</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#1a8c5a"></div><strong>Email collaboration</strong> &mdash; no account needed</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#1a8c5a"></div><strong>Open challenges</strong> &mdash; ideas from anywhere</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#1a8c5a"></div><strong>Upvote/downvote</strong> &mdash; democratic prioritization</div>
           </div>
         </div>
-        <div class="sc-visual" aria-hidden="true">
+        <div class="sc-visual">
           <div class="sc-visual-mock">🤝<div class="mock-label">Screenshot: Collaboration panel + Impact vs Effort matrix</div></div>
         </div>
-      </article>
+      </div>
     </div>
 
+    <!-- Card 4: Innovation Radar -->
     <div class="stacking-card-sticky" data-card="3">
-      <article class="stacking-card card-radar">
+      <div class="stacking-card card-radar">
         <div class="sc-content">
           <div class="sc-label">04 &mdash; Always-On Intelligence</div>
           <h2>The Innovation Radar.</h2>
           <p>The Knowledge Base continuously scans your sources and surfaces opportunities before you even ask. Five strategic lenses find what humans miss.</p>
           <div class="sc-features">
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#8e24aa" aria-hidden="true"></div><strong>Asset Gap</strong> &mdash; underutilized assets + demand</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#8e24aa" aria-hidden="true"></div><strong>Market White Space</strong> &mdash; competitor gaps</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#8e24aa" aria-hidden="true"></div><strong>Synergy Bridge</strong> &mdash; non-obvious connections</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#8e24aa"></div><strong>Asset Gap</strong> &mdash; underutilized assets + demand</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#8e24aa"></div><strong>Market White Space</strong> &mdash; competitor gaps</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#8e24aa"></div><strong>Synergy Bridge</strong> &mdash; non-obvious connections</div>
           </div>
         </div>
-        <div class="sc-visual" aria-hidden="true">
+        <div class="sc-visual">
           <div class="sc-visual-mock">📡<div class="mock-label">Screenshot: Knowledge Base radar visualization</div></div>
         </div>
-      </article>
+      </div>
     </div>
 
+    <!-- Card 5: Digital Twins -->
     <div class="stacking-card-sticky" data-card="4">
-      <article class="stacking-card card-twins">
+      <div class="stacking-card card-twins">
         <div class="sc-content">
           <div class="sc-label">05 &mdash; Validate Before You Invest</div>
           <h2>Test with Digital Twins.</h2>
           <p>AI-powered recreations of your real customers, built from actual research data. Test concepts before committing R&amp;D budgets. 85% accuracy validated by Stanford research.</p>
           <div class="sc-features">
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#00695c" aria-hidden="true"></div><strong>Concept testing</strong> &mdash; pricing, features, positioning</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#00695c" aria-hidden="true"></div><strong>Real data grounded</strong> &mdash; not hallucinated personas</div>
-            <div class="sc-feature"><div class="sc-feature-dot" style="background:#00695c" aria-hidden="true"></div><strong>The Mirror</strong> &mdash; living personas from your research</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#00695c"></div><strong>Concept testing</strong> &mdash; pricing, features, positioning</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#00695c"></div><strong>Real data grounded</strong> &mdash; not hallucinated personas</div>
+            <div class="sc-feature"><div class="sc-feature-dot" style="background:#00695c"></div><strong>The Mirror</strong> &mdash; living personas from your research</div>
           </div>
         </div>
-        <div class="sc-visual" aria-hidden="true">
+        <div class="sc-visual">
           <div class="sc-visual-mock">&#129514;<div class="mock-label">Screenshot: Digital twin conversation + concept feedback</div></div>
         </div>
-      </article>
+      </div>
     </div>
 
   </div>
 </div>
 
 <!-- EXPERT AGENTS -->
-<section class="agents-section" aria-labelledby="agents-heading">
+<section class="agents-section">
   <div class="section-inner">
     <div class="section-label">Specialist AI agents</div>
-    <h2 class="section-title" id="agents-heading">80% of what a consultant gives you. Instantly.</h2>
+    <h2 class="section-title">80% of what a consultant gives you. Instantly.</h2>
     <p class="section-sub">Every idea can be enriched by specialist agents loaded with your project context.</p>
     <div class="agents-grid">
-      <div class="agent-card"><div class="agent-icon" style="background:#e8f5e9" aria-hidden="true">🧪</div><div><h4>Food Science Expert</h4><p>Formulation direction, competitor ingredients, regulatory status</p></div></div>
-      <div class="agent-card"><div class="agent-icon" style="background:#e3f2fd" aria-hidden="true">🧠</div><div><h4>Behavioral Science Expert</h4><p>Adoption barriers, decision triggers, behavioral nudges</p></div></div>
-      <div class="agent-card"><div class="agent-icon" style="background:#fff3e0" aria-hidden="true">💼</div><div><h4>Business Model Expert</h4><p>Revenue model options, go-to-market considerations</p></div></div>
-      <div class="agent-card"><div class="agent-icon" style="background:#fce4ec" aria-hidden="true">📣</div><div><h4>FMCG Marketing Agent</h4><p>Positioning, packaging, channel strategy</p></div></div>
-      <div class="agent-card"><div class="agent-icon" style="background:#f3e5f5" aria-hidden="true">♻️</div><div><h4>Repurposing Engineer</h4><p>Reuse and repurpose angles for byproducts</p></div></div>
-      <div class="agent-card"><div class="agent-icon" style="background:#e0f2f1" aria-hidden="true">💰</div><div><h4>Financial Analysis</h4><p>Pricing estimates, variable costs, Total Economic Value</p></div></div>
+      <div class="agent-card"><div class="agent-icon" style="background:#e8f5e9">🧪</div><div><h4>Food Science Expert</h4><p>Formulation direction, competitor ingredients, regulatory status</p></div></div>
+      <div class="agent-card"><div class="agent-icon" style="background:#e3f2fd">🧠</div><div><h4>Behavioral Science Expert</h4><p>Adoption barriers, decision triggers, behavioral nudges</p></div></div>
+      <div class="agent-card"><div class="agent-icon" style="background:#fff3e0">💼</div><div><h4>Business Model Expert</h4><p>Revenue model options, go-to-market considerations</p></div></div>
+      <div class="agent-card"><div class="agent-icon" style="background:#fce4ec">📣</div><div><h4>FMCG Marketing Agent</h4><p>Positioning, packaging, channel strategy</p></div></div>
+      <div class="agent-card"><div class="agent-icon" style="background:#f3e5f5">♻️</div><div><h4>Repurposing Engineer</h4><p>Reuse and repurpose angles for byproducts</p></div></div>
+      <div class="agent-card"><div class="agent-icon" style="background:#e0f2f1">💰</div><div><h4>Financial Analysis</h4><p>Pricing estimates, variable costs, Total Economic Value</p></div></div>
     </div>
+
   </div>
 </section>
 
 <!-- VALUE STACK -->
-<section class="section value-stack" aria-labelledby="value-heading">
+<section class="section value-stack">
   <div class="section-inner">
     <div class="section-label">What you get</div>
-    <h2 class="section-title" id="value-heading">The full chain, in one platform.</h2>
+    <h2 class="section-title">The full chain, in one platform.</h2>
     <p class="section-sub">Everything that used to take 3-4 agencies and 4-6 months.</p>
     <div class="value-tiers">
-      <div class="value-tier tier-1"><div class="tier-icon" aria-hidden="true">📡</div><div class="tier-content"><h3>Always-on market intelligence</h3><p>Knowledge Base scans 24/7. Opportunities surface before you brief anyone.</p></div><div class="tier-value">Replaces trend agencies</div></div>
-      <div class="value-tier tier-2"><div class="tier-icon" aria-hidden="true">💡</div><div class="tier-content"><h3>Constraint-aware ideation + expert enrichment</h3><p>Hundreds of ideas born feasible. Enriched by 6 specialist agents.</p></div><div class="tier-value">Replaces innovation consultants</div></div>
-      <div class="value-tier tier-3"><div class="tier-icon" aria-hidden="true">📊</div><div class="tier-content"><h3>Financial modeling + transparent prioritization</h3><p>Auto-generated business cases. Collaborative decision-making.</p></div><div class="tier-value">Replaces weeks of analysis</div></div>
-      <div class="value-tier tier-4"><div class="tier-icon" aria-hidden="true">🧑‍🤝‍🧑</div><div class="tier-content"><h3>Digital twin validation + org-wide input</h3><p>Test concepts against AI customers. Open challenges for the whole org.</p></div><div class="tier-value">Replaces market research</div></div>
+      <div class="value-tier tier-1"><div class="tier-icon">📡</div><div class="tier-content"><h3>Always-on market intelligence</h3><p>Knowledge Base scans 24/7. Opportunities surface before you brief anyone.</p></div><div class="tier-value">Replaces trend agencies</div></div>
+      <div class="value-tier tier-2"><div class="tier-icon">💡</div><div class="tier-content"><h3>Constraint-aware ideation + expert enrichment</h3><p>Hundreds of ideas born feasible. Enriched by 6 specialist agents.</p></div><div class="tier-value">Replaces innovation consultants</div></div>
+      <div class="value-tier tier-3"><div class="tier-icon">📊</div><div class="tier-content"><h3>Financial modeling + transparent prioritization</h3><p>Auto-generated business cases. Collaborative decision-making.</p></div><div class="tier-value">Replaces weeks of analysis</div></div>
+      <div class="value-tier tier-4"><div class="tier-icon">🧑‍🤝‍🧑</div><div class="tier-content"><h3>Digital twin validation + org-wide input</h3><p>Test concepts against AI customers. Open challenges for the whole org.</p></div><div class="tier-value">Replaces market research</div></div>
     </div>
     <div class="value-total">
       <div class="value-total-left"><h3>One platform. Modular. Configurable to your exact process.</h3><p>Pick the capabilities you need. Configure stages, gates, expert agents, and scoring drivers to match how your team actually works. Add modules as your innovation practice matures.</p></div>
@@ -728,28 +642,28 @@ a{color:var(--accent);text-decoration:none}
 </section>
 
 <!-- SOCIAL PROOF -->
-<section class="section social-proof" aria-labelledby="testimonials-heading">
+<section class="section social-proof">
   <div class="section-inner">
     <div class="section-label">What our customers say</div>
-    <h2 class="section-title" id="testimonials-heading">Innovation leaders trust The BOX.</h2>
+    <h2 class="section-title">Innovation leaders trust The BOX.</h2>
     <div class="testimonials">
-      <blockquote class="testimonial">
+      <div class="testimonial">
         <div class="testimonial-result">Brief to 200+ validated ideas in 3 days</div>
         <p class="testimonial-quote">Every time I see the results I'm astounded by what is possible. This is truly a revolution in how we do innovation.</p>
-        <footer class="testimonial-author"><div class="testimonial-avatar" aria-hidden="true">VP</div><div><div class="testimonial-name">VP Innovation</div><div class="testimonial-role">US FMCG Leader</div></div></footer>
-      </blockquote>
-      <blockquote class="testimonial">
+        <div class="testimonial-author"><div class="testimonial-avatar">VP</div><div><div class="testimonial-name">VP Innovation</div><div class="testimonial-role">US FMCG Leader</div></div></div>
+      </div>
+      <div class="testimonial">
         <div class="testimonial-result">End-to-end innovation in a single platform</div>
         <p class="testimonial-quote">Amazing tool! One of the most end-to-end and effective I've seen.</p>
-        <footer class="testimonial-author"><div class="testimonial-avatar" aria-hidden="true">IC</div><div><div class="testimonial-name">Innovation Consultant</div><div class="testimonial-role">Global Agency</div></div></footer>
-      </blockquote>
-      <blockquote class="testimonial">
+        <div class="testimonial-author"><div class="testimonial-avatar">IC</div><div><div class="testimonial-name">Innovation Consultant</div><div class="testimonial-role">Global Agency</div></div></div>
+      </div>
+      <div class="testimonial">
         <div class="testimonial-result">Team alignment + next-gen product pipeline</div>
         <p class="testimonial-quote">We look forward to leveraging the BOX to drive our products into the next generation.</p>
-        <footer class="testimonial-author"><div class="testimonial-avatar" aria-hidden="true">RD</div><div><div class="testimonial-name">Head of R&amp;D</div><div class="testimonial-role">Coffee Company</div></div></footer>
-      </blockquote>
+        <div class="testimonial-author"><div class="testimonial-avatar">RD</div><div><div class="testimonial-name">Head of R&amp;D</div><div class="testimonial-role">Coffee Company</div></div></div>
+      </div>
     </div>
-    <div class="logos-row" aria-label="Clients">
+    <div class="logos-row">
       <div class="logo-placeholder">WestRock Coffee</div>
       <div class="logo-placeholder">Strauss</div>
       <div class="logo-placeholder">ZF</div>
@@ -762,100 +676,100 @@ a{color:var(--accent);text-decoration:none}
 </section>
 
 <!-- COMPARISON -->
-<section class="comparison" aria-labelledby="comparison-heading">
+<section class="comparison">
   <div class="section-inner">
     <div class="section-label">How it compares</div>
-    <h2 class="section-title" id="comparison-heading">The right balance of speed, depth, and cost.</h2>
+    <h2 class="section-title">The right balance of speed, depth, and cost.</h2>
     <table class="comp-table">
-      <caption class="sr-only">Feature comparison: The BOX vs Generic AI vs Innovation Platforms vs Consultancy</caption>
-      <thead><tr><th scope="col"></th><th scope="col">The BOX</th><th scope="col">Generic AI</th><th scope="col">Innovation Platforms</th><th scope="col">Consultancy</th></tr></thead>
+      <thead><tr><th></th><th>The BOX</th><th>Generic AI</th><th>Innovation Platforms</th><th>Consultancy</th></tr></thead>
       <tbody>
-        <tr><th scope="row">Time to ideas</th><td class="col-box">Hours (constraint-filtered)</td><td>Minutes (shallow, generic)</td><td>Weeks</td><td>Months</td></tr>
-        <tr><th scope="row">Constraint-aware</th><td class="col-box">Built into every step</td><td>Only if you re-prompt each time</td><td>Limited</td><td>Yes, but slow</td></tr>
-        <tr><th scope="row">Sector intelligence</th><td class="col-box">Food science, regulatory, ingredients</td><td>None. Hallucinates specifics</td><td>Varies</td><td>Custom ($$$)</td></tr>
-        <tr><th scope="row">Business case</th><td class="col-box">Auto-generated per idea</td><td>Manual. Copy-paste to Excel</td><td>Manual</td><td>Custom ($$$)</td></tr>
-        <tr><th scope="row">Collaboration</th><td class="col-box">Email, async, org-wide</td><td>Single-user chat window</td><td>Basic</td><td>Workshops</td></tr>
-        <tr><th scope="row">Memory + learning</th><td class="col-box">Compounds (Knowledge Base)</td><td>Stateless. Forgets everything</td><td>Limited</td><td>Deliverable decays</td></tr>
-        <tr><th scope="row">End-to-end flow</th><td class="col-box">Research to validation</td><td>Each prompt is isolated</td><td>Partial</td><td>Yes, 6+ months</td></tr>
-        <tr><th scope="row">Cost</th><td class="col-box">SaaS subscription</td><td>Low, but you get what you pay for</td><td>Enterprise $$</td><td>$$$$$</td></tr>
+        <tr><td>Time to ideas</td><td class="col-box">Hours (constraint-filtered)</td><td>Minutes (shallow, generic)</td><td>Weeks</td><td>Months</td></tr>
+        <tr><td>Constraint-aware</td><td class="col-box">Built into every step</td><td>Only if you re-prompt each time</td><td>Limited</td><td>Yes, but slow</td></tr>
+        <tr><td>Sector intelligence</td><td class="col-box">Food science, regulatory, ingredients</td><td>None. Hallucinates specifics</td><td>Varies</td><td>Custom ($$$)</td></tr>
+        <tr><td>Business case</td><td class="col-box">Auto-generated per idea</td><td>Manual. Copy-paste to Excel</td><td>Manual</td><td>Custom ($$$)</td></tr>
+        <tr><td>Collaboration</td><td class="col-box">Email, async, org-wide</td><td>Single-user chat window</td><td>Basic</td><td>Workshops</td></tr>
+        <tr><td>Memory + learning</td><td class="col-box">Compounds (Knowledge Base)</td><td>Stateless. Forgets everything</td><td>Limited</td><td>Deliverable decays</td></tr>
+        <tr><td>End-to-end flow</td><td class="col-box">Research to validation</td><td>Each prompt is isolated</td><td>Partial</td><td>Yes, 6+ months</td></tr>
+        <tr><td>Cost</td><td class="col-box">SaaS subscription</td><td>Low, but you get what you pay for</td><td>Enterprise $$</td><td>$$$$$</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<!-- USE CASES / CASE SLIDER -->
-<section class="use-cases" style="background:var(--paper)" aria-labelledby="cases-heading">
+<!-- USE CASES -->
+<section class="use-cases" style="background:var(--paper)">
   <div class="section-inner">
     <div class="section-label">What teams ask The BOX</div>
-    <h2 class="section-title" id="cases-heading">Real challenges. Real results.</h2>
-    <div class="case-slider" id="caseSlider" aria-label="Customer case studies" aria-live="polite">
+    <h2 class="section-title">Real challenges. Real results.</h2>
+    <div class="case-slider" id="caseSlider">
       <div class="case-track" id="caseTrack">
         <div class="case-slide">
-          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800')" role="img" aria-label="Plant-based beverages"><div class="case-num" aria-hidden="true">01</div></div>
+          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800')"><div class="case-num">01</div></div>
           <div class="case-slide-content">
-            <blockquote class="case-quote">"Create an innovative plant-based beverage for the German market targeting Gen-Z. It must run on our under-utilized production line."</blockquote>
+            <div class="case-quote">"Create an innovative plant-based beverage for the German market targeting Gen-Z. It must run on our under-utilized production line."</div>
             <div class="case-role"><strong>VP Innovation</strong> &mdash; European F&amp;B Company</div>
             <div class="case-result"><div class="case-result-label">Result</div><div class="case-result-text">47 constraint-aware concepts generated in 3 hours. 6 moved to R&amp;D validation.</div></div>
           </div>
         </div>
         <div class="case-slide">
-          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800')" role="img" aria-label="Coffee production byproducts"><div class="case-num" aria-hidden="true">02</div></div>
+          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800')"><div class="case-num">02</div></div>
           <div class="case-slide-content">
-            <blockquote class="case-quote">"Identify 3 new revenue streams from coffee production byproducts without CapEx investment."</blockquote>
+            <div class="case-quote">"Identify 3 new revenue streams from coffee production byproducts without CapEx investment."</div>
             <div class="case-role"><strong>Head of R&amp;D</strong> &mdash; Specialty Coffee Company</div>
             <div class="case-result"><div class="case-result-label">Result</div><div class="case-result-text">12 byproduct opportunities identified. 3 selected with combined estimated value of $2.4M.</div></div>
           </div>
         </div>
         <div class="case-slide">
-          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800')" role="img" aria-label="Clean-label snack innovation"><div class="case-num" aria-hidden="true">03</div></div>
+          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800')"><div class="case-num">03</div></div>
           <div class="case-slide-content">
-            <blockquote class="case-quote">"Develop a clean-label snack line that hits 35% contribution margins within our existing supply chain."</blockquote>
+            <div class="case-quote">"Develop a clean-label snack line that hits 35% contribution margins within our existing supply chain."</div>
             <div class="case-role"><strong>Director of NPD</strong> &mdash; Consumer Goods</div>
             <div class="case-result"><div class="case-result-label">Result</div><div class="case-result-text">Full pipeline from trend analysis to financial model in 2 weeks instead of 4 months.</div></div>
           </div>
         </div>
         <div class="case-slide">
-          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800')" role="img" aria-label="Automotive sensor innovation"><div class="case-num" aria-hidden="true">04</div></div>
+          <div class="case-slide-img" style="background-image:url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800')"><div class="case-num">04</div></div>
           <div class="case-slide-content">
-            <blockquote class="case-quote">"Reduce time-to-market for sensor integration across our diversified automotive portfolio."</blockquote>
+            <div class="case-quote">"Reduce time-to-market for sensor integration across our diversified automotive portfolio."</div>
             <div class="case-role"><strong>Innovation Lead</strong> &mdash; Automotive Tier-1</div>
             <div class="case-result"><div class="case-result-label">Result</div><div class="case-result-text">After 6 years of consultants and 300 reports: 2 initiatives selected in a single 2.5-hour session.</div></div>
           </div>
         </div>
       </div>
       <div class="case-arrows">
-        <button class="case-arrow" onclick="slideCase(-1)" aria-label="Previous case study">&#8592;</button>
-        <div class="case-dots" id="caseDots" role="tablist" aria-label="Case study navigation"></div>
-        <button class="case-arrow" onclick="slideCase(1)" aria-label="Next case study">&#8594;</button>
+        <div class="case-arrow" onclick="slideCase(-1)">&#8592;</div>
+        <div class="case-dots" id="caseDots"></div>
+        <div class="case-arrow" onclick="slideCase(1)">&#8594;</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TRANSFORMATION -->
-<section class="section transformation" aria-labelledby="transform-heading">
+<section class="section transformation">
   <div class="section-inner">
     <div class="section-label">The journey</div>
-    <h2 class="section-title" id="transform-heading">From POC workshop to innovation operating system.</h2>
+    <h2 class="section-title">From POC workshop to innovation operating system.</h2>
     <div class="transform-stages" style="grid-template-columns:repeat(5,1fr)">
-      <div class="transform-stage" style="position:relative;z-index:1"><div class="stage-circle" style="background:#f3e5f5;border:3px solid #8e24aa" aria-hidden="true">&#x1F393;</div><div class="stage-label">POC Workshop</div><div class="stage-desc">Half-day session on your real challenge. See results first.</div><div class="stage-time">Day 1</div></div>
-      <div class="transform-stage stage-1"><div class="stage-circle" aria-hidden="true">⚡</div><div class="stage-label">Quick Win</div><div class="stage-desc">Run your first challenge. Brief to concepts in weeks.</div><div class="stage-time">Week 1-2</div></div>
-      <div class="transform-stage stage-2"><div class="stage-circle" aria-hidden="true">📚</div><div class="stage-label">Compound</div><div class="stage-desc">Knowledge Base fills. Each project makes the next smarter.</div><div class="stage-time">Month 1-3</div></div>
-      <div class="transform-stage stage-3"><div class="stage-circle" aria-hidden="true">🏗️</div><div class="stage-label">Advantage</div><div class="stage-desc">Opportunities surface autonomously. Evidence-based decisions.</div><div class="stage-time">Month 3-6</div></div>
-      <div class="transform-stage stage-4"><div class="stage-circle" aria-hidden="true">🚀</div><div class="stage-label">10x</div><div class="stage-desc">Org-wide innovation capability. Compounding intelligence.</div><div class="stage-time">Month 6+</div></div>
+      <div class="transform-stage" style="position:relative;z-index:1"><div class="stage-circle" style="background:#f3e5f5;border:3px solid #8e24aa">&#x1F393;</div><div class="stage-label">POC Workshop</div><div class="stage-desc">Half-day session on your real challenge. See results first.</div><div class="stage-time">Day 1</div></div>
+      <div class="transform-stage stage-1"><div class="stage-circle">⚡</div><div class="stage-label">Quick Win</div><div class="stage-desc">Run your first challenge. Brief to concepts in weeks.</div><div class="stage-time">Week 1-2</div></div>
+      <div class="transform-stage stage-2"><div class="stage-circle">📚</div><div class="stage-label">Compound</div><div class="stage-desc">Knowledge Base fills. Each project makes the next smarter.</div><div class="stage-time">Month 1-3</div></div>
+      <div class="transform-stage stage-3"><div class="stage-circle">🏗️</div><div class="stage-label">Advantage</div><div class="stage-desc">Opportunities surface autonomously. Evidence-based decisions.</div><div class="stage-time">Month 3-6</div></div>
+      <div class="transform-stage stage-4"><div class="stage-circle">🚀</div><div class="stage-label">10x</div><div class="stage-desc">Org-wide innovation capability. Compounding intelligence.</div><div class="stage-time">Month 6+</div></div>
     </div>
   </div>
 </section>
 
 <!-- SECONDARY CTA -->
-<section class="secondary-cta" aria-labelledby="cta-heading">
+<section class="secondary-cta">
   <div class="section-inner">
-    <div class="avatar-stack" aria-hidden="true">
+    <div class="avatar-stack">
       <div class="avatar-stack-item">SC</div><div class="avatar-stack-item">JM</div><div class="avatar-stack-item">TH</div><div class="avatar-stack-item">MJ</div><div class="avatar-stack-item">+42</div>
     </div>
-    <h2 id="cta-heading">Ready to build the right thing?</h2>
+    <h2>Ready to build the right thing?</h2>
     <p>Join innovation leaders who've compressed months of work into weeks.</p>
-    <button class="btn-glow" onclick="goTo('demo')">Book Your Demo &rarr;</button>
+    <button class="btn-glow">Book Your Demo &rarr;</button>
+    
   </div>
 </section>
 
@@ -865,7 +779,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: HOW IT WORKS                                        -->
 <!-- ======================================================= -->
-<div class="page" id="page-how-it-works" role="main">
+<div class="page" id="page-how-it-works">
 <div class="inner-hero" data-nav="dark">
   <div class="section-inner">
     <div class="hero-eyebrow">How The BOX Works</div>
@@ -879,102 +793,102 @@ a{color:var(--accent);text-decoration:none}
   <p style="max-width:700px;margin-bottom:8px">The BOX compresses the entire innovation, R&amp;D, and NPD journey into a single connected flow.</p>
 
   <div class="flow-sequence" id="flowSequence">
-    <div class="flow-line" aria-hidden="true"></div>
+    <div class="flow-line"></div>
 
     <div class="flow-step flow-left" data-step="1">
-      <div class="flow-dot" aria-hidden="true">01</div>
+      <div class="flow-dot">01</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#1a237e,#303f9f)">
-          <span class="flow-card-icon" aria-hidden="true">&#127919;</span>
+          <span class="flow-card-icon">&#127919;</span>
           <h3>Challenge Definition</h3>
         </div>
         <div class="flow-card-body">
           <p>Define your goal and constraints: production lines, budget, regulations, certifications. The BOX uses them in every step that follows.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Challenge Definition video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
 
     <div class="flow-step flow-right" data-step="2">
-      <div class="flow-dot" aria-hidden="true">02</div>
+      <div class="flow-dot">02</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#00695c,#00897b)">
-          <span class="flow-card-icon" aria-hidden="true">&#128225;</span>
+          <span class="flow-card-icon">&#128225;</span>
           <h3>Always-On Intelligent Research</h3>
         </div>
         <div class="flow-card-body">
           <p>AI agents scan hundreds of sources and synthesize agency-grade insights with full source attribution in minutes.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Intelligent Research video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
 
     <div class="flow-step flow-left" data-step="3">
-      <div class="flow-dot" aria-hidden="true">03</div>
+      <div class="flow-dot">03</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#e65100,#f57c00)">
-          <span class="flow-card-icon" aria-hidden="true">&#128161;</span>
+          <span class="flow-card-icon">&#128161;</span>
           <h3>Opportunity Spaces &amp; Ideation</h3>
         </div>
         <div class="flow-card-body">
           <p>Strategic opportunity spaces backed by evidence. Dozens of ideas per space, incremental to radical, all filtered through your constraints.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Opportunity Spaces video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
 
     <div class="flow-step flow-right" data-step="4">
-      <div class="flow-dot" aria-hidden="true">04</div>
+      <div class="flow-dot">04</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#c62828,#e53935)">
-          <span class="flow-card-icon" aria-hidden="true">&#129302;</span>
+          <span class="flow-card-icon">&#129302;</span>
           <h3>Expert Enrichment &amp; Prioritization</h3>
         </div>
         <div class="flow-card-body">
           <p>Six specialist AI agents add depth. L1/L2 assumptions auto-generated. Impact vs. Effort scoring with configurable drivers.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Expert Enrichment video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
 
     <div class="flow-step flow-left" data-step="5">
-      <div class="flow-dot" aria-hidden="true">05</div>
+      <div class="flow-dot">05</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#1a237e,#5c6bc0)">
-          <span class="flow-card-icon" aria-hidden="true">&#128101;</span>
+          <span class="flow-card-icon">&#128101;</span>
           <h3>Collaborative Decision Making</h3>
         </div>
         <div class="flow-card-body">
           <p>Email-based stakeholder input. Transparent trade-offs. Democratic scoring across R&amp;D, marketing, product, and leadership.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Collaborative Decision Making video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
 
     <div class="flow-step flow-right" data-step="6">
-      <div class="flow-dot" aria-hidden="true">06</div>
+      <div class="flow-dot">06</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#00695c,#26a69a)">
-          <span class="flow-card-icon" aria-hidden="true">&#129514;</span>
+          <span class="flow-card-icon">&#129514;</span>
           <h3>Digital Twin Testing</h3>
         </div>
         <div class="flow-card-body">
           <p>Validate against AI-powered customer replicas based on real research data. 85% accuracy (Stanford). Before committing R&amp;D budgets.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Digital Twin Testing video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
 
     <div class="flow-step flow-left" data-step="7">
-      <div class="flow-dot" aria-hidden="true">07</div>
+      <div class="flow-dot">07</div>
       <div class="flow-card">
         <div class="flow-card-header" style="background:linear-gradient(135deg,#8e24aa,#ab47bc)">
-          <span class="flow-card-icon" aria-hidden="true">&#128640;</span>
+          <span class="flow-card-icon">&#128640;</span>
           <h3>Stage-Gated Execution</h3>
         </div>
         <div class="flow-card-body">
           <p>Define your own stages and gates. Every project, vote, and insight compounds in the Knowledge Base, making the next project smarter.</p>
-          <div class="flow-video-placeholder" role="button" tabindex="0" aria-label="Watch Stage-Gated Execution video walkthrough">&#9654; Video walkthrough</div>
+          <div class="flow-video-placeholder">&#9654; Video walkthrough</div>
         </div>
       </div>
     </div>
@@ -986,17 +900,17 @@ a{color:var(--accent);text-decoration:none}
   <h2 style="color:#fff">The BOX amplifies team intelligence</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:36px">
     <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 24px">
-      <div style="width:48px;height:48px;border-radius:12px;background:rgba(179,157,219,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px" aria-hidden="true">&#128101;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:rgba(179,157,219,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px">&#128101;</div>
       <h3 style="color:#fff;font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Multi-Stakeholder Input</h3>
       <p style="font-size:.88rem;color:rgba(255,255,255,0.6);line-height:1.6">R&amp;D, marketing, product, finance. Different priorities, one shared platform. AI balances competing interests.</p>
     </div>
     <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 24px">
-      <div style="width:48px;height:48px;border-radius:12px;background:rgba(179,157,219,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px" aria-hidden="true">&#9993;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:rgba(179,157,219,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px">&#9993;</div>
       <h3 style="color:#fff;font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Email-Based Collaboration</h3>
       <p style="font-size:.88rem;color:rgba(255,255,255,0.6);line-height:1.6">Invite anyone via email. No account needed. Score ideas, add comments, input constraints from their inbox.</p>
     </div>
     <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 24px">
-      <div style="width:48px;height:48px;border-radius:12px;background:rgba(179,157,219,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px" aria-hidden="true">&#128269;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:rgba(179,157,219,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px">&#128269;</div>
       <h3 style="color:#fff;font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Transparent Process</h3>
       <p style="font-size:.88rem;color:rgba(255,255,255,0.6);line-height:1.6">Every AI field shows its reasoning. Every insight links to sources. Nothing is a black box.</p>
     </div>
@@ -1007,29 +921,29 @@ a{color:var(--accent);text-decoration:none}
   <div class="section-label">Human mastery in the loop</div>
   <h2>At every step, humans maintain strategic control</h2>
   <div style="display:flex;gap:0;margin-top:36px;position:relative">
-    <div style="position:absolute;top:28px;left:40px;right:40px;height:3px;background:linear-gradient(90deg,#1a237e,#00695c);z-index:0;border-radius:2px" aria-hidden="true"></div>
+    <div style="position:absolute;top:28px;left:40px;right:40px;height:3px;background:linear-gradient(90deg,#1a237e,#00695c);z-index:0;border-radius:2px"></div>
     <div style="flex:1;text-align:center;position:relative;z-index:1">
-      <div style="width:56px;height:56px;border-radius:50%;background:#1a237e;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)" aria-hidden="true">&#127919;</div>
+      <div style="width:56px;height:56px;border-radius:50%;background:#1a237e;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)">&#127919;</div>
       <div style="font-family:var(--font-display);font-weight:700;font-size:.82rem;margin-top:10px">Brief</div>
       <div style="font-size:.75rem;color:var(--muted);margin-top:4px">You set vision</div>
     </div>
     <div style="flex:1;text-align:center;position:relative;z-index:1">
-      <div style="width:56px;height:56px;border-radius:50%;background:#303f9f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)" aria-hidden="true">&#128270;</div>
+      <div style="width:56px;height:56px;border-radius:50%;background:#303f9f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)">&#128270;</div>
       <div style="font-family:var(--font-display);font-weight:700;font-size:.82rem;margin-top:10px">Curate</div>
       <div style="font-size:.75rem;color:var(--muted);margin-top:4px">You select insights</div>
     </div>
     <div style="flex:1;text-align:center;position:relative;z-index:1">
-      <div style="width:56px;height:56px;border-radius:50%;background:#5c6bc0;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)" aria-hidden="true">&#9997;</div>
+      <div style="width:56px;height:56px;border-radius:50%;background:#5c6bc0;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)">&#9997;</div>
       <div style="font-family:var(--font-display);font-weight:700;font-size:.82rem;margin-top:10px">Enhance</div>
       <div style="font-size:.75rem;color:var(--muted);margin-top:4px">You add expertise</div>
     </div>
     <div style="flex:1;text-align:center;position:relative;z-index:1">
-      <div style="width:56px;height:56px;border-radius:50%;background:#26a69a;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)" aria-hidden="true">&#9878;</div>
+      <div style="width:56px;height:56px;border-radius:50%;background:#26a69a;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)">&#9878;</div>
       <div style="font-family:var(--font-display);font-weight:700;font-size:.82rem;margin-top:10px">Decide</div>
       <div style="font-size:.75rem;color:var(--muted);margin-top:4px">You make the call</div>
     </div>
     <div style="flex:1;text-align:center;position:relative;z-index:1">
-      <div style="width:56px;height:56px;border-radius:50%;background:#00695c;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)" aria-hidden="true">&#128640;</div>
+      <div style="width:56px;height:56px;border-radius:50%;background:#00695c;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)">&#128640;</div>
       <div style="font-family:var(--font-display);font-weight:700;font-size:.82rem;margin-top:10px">Execute</div>
       <div style="font-size:.75rem;color:var(--muted);margin-top:4px">You drive it home</div>
     </div>
@@ -1041,19 +955,19 @@ a{color:var(--accent);text-decoration:none}
   <h2>Works however you work</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px">
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;display:flex;gap:16px;align-items:flex-start">
-      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0" aria-hidden="true">&#129489;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">&#129489;</div>
       <div><div style="font-family:var(--font-display);font-weight:700;font-size:.95rem;margin-bottom:4px">Solo</div><div style="font-size:.85rem;color:var(--muted);line-height:1.5">One person, full overview. For the R&amp;D manager who owns the full picture.</div></div>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;display:flex;gap:16px;align-items:flex-start">
-      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0" aria-hidden="true">&#128228;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">&#128228;</div>
       <div><div style="font-family:var(--font-display);font-weight:700;font-size:.95rem;margin-bottom:4px">Team (async)</div><div style="font-size:.85rem;color:var(--muted);line-height:1.5">Different time zones. Score ideas and input constraints without meetings.</div></div>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;display:flex;gap:16px;align-items:flex-start">
-      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0" aria-hidden="true">&#127760;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">&#127760;</div>
       <div><div style="font-family:var(--font-display);font-weight:700;font-size:.95rem;margin-bottom:4px">Org-wide</div><div style="font-size:.85rem;color:var(--muted);line-height:1.5">Open challenges across the company. Ideas from anyone, same pipeline.</div></div>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;display:flex;gap:16px;align-items:flex-start">
-      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0" aria-hidden="true">&#127916;</div>
+      <div style="width:48px;height:48px;border-radius:12px;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">&#127916;</div>
       <div><div style="font-family:var(--font-display);font-weight:700;font-size:.95rem;margin-bottom:4px">Workshop</div><div style="font-size:.85rem;color:var(--muted);line-height:1.5">Real-time AI in client sessions. For consultancies and agencies.</div></div>
     </div>
   </div>
@@ -1062,28 +976,27 @@ a{color:var(--accent);text-decoration:none}
     <p style="font-size:.95rem;color:rgba(255,255,255,0.7);line-height:1.7;max-width:600px">Connect your full data stack or just type a brief on a blank page. The BOX adapts to what you have. Because the best innovation tool is the one you actually use.</p>
   </div>
 </div></div>
-
 <div class="inner-section"><div class="section-inner">
   <h2>Frequently asked questions</h2>
   <div class="faq-list">
     <div class="faq-item" onclick="this.classList.toggle('open')">
-      <div class="faq-q"><h3>How does digital twin testing work?</h3><div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-q"><h3>How does digital twin testing work?</h3><div class="faq-icon">+</div></div>
       <div class="faq-a"><p>Digital twins create accurate customer representations based on real qualitative and quantitative research data with 85% accuracy (Stanford). Unlike hallucinated personas, ours are grounded in real data via The Mirror platform, making them reliable for R&amp;D, marketing, and NPD decisions. Test pricing, features, positioning, and packaging before committing budgets.</p></div>
     </div>
     <div class="faq-item" onclick="this.classList.toggle('open')">
-      <div class="faq-q"><h3>What about data security?</h3><div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-q"><h3>What about data security?</h3><div class="faq-icon">+</div></div>
       <div class="faq-a"><p>All data encrypted in transit and at rest. ISO 27001 and SOC2 certifications in progress. GDPR compliant. Your data never trains our AI models. We maintain a transparent sub-processor list. For enterprise clients, we offer dedicated infrastructure.</p></div>
     </div>
     <div class="faq-item" onclick="this.classList.toggle('open')">
-      <div class="faq-q"><h3>How accurate are the AI-generated insights?</h3><div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-q"><h3>How accurate are the AI-generated insights?</h3><div class="faq-icon">+</div></div>
       <div class="faq-a"><p>Sourced from verified, authoritative sources with full attribution. The methodology includes human validation at key checkpoints. You can always trace insights back to their sources and add domain expertise. The system augments judgment, it does not replace it.</p></div>
     </div>
     <div class="faq-item" onclick="this.classList.toggle('open')">
-      <div class="faq-q"><h3>Can The BOX integrate with existing tools?</h3><div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-q"><h3>Can The BOX integrate with existing tools?</h3><div class="faq-icon">+</div></div>
       <div class="faq-a"><p>Google Drive integration, document uploads in multiple formats, and we are building connectors for ITONICS, PLM systems, and NielsenIQ. Email-based collaboration means any stakeholder can contribute without creating an account. Custom integrations available for enterprise clients.</p></div>
     </div>
     <div class="faq-item" onclick="this.classList.toggle('open')">
-      <div class="faq-q"><h3>What's different from ChatGPT or other AI tools?</h3><div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-q"><h3>What's different from ChatGPT or other AI tools?</h3><div class="faq-icon">+</div></div>
       <div class="faq-a"><p>The BOX is constraint-aware, sector-specific, collaborative, and accumulative. Generic AI is a stateless conversation that forgets everything. The BOX is an innovation operating system that gets smarter the more you use it, supporting the full chain from R&amp;D research through ideation, enrichment, prioritization, and go-to-market.</p></div>
     </div>
   </div>
@@ -1093,7 +1006,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: USE CASES                                           -->
 <!-- ======================================================= -->
-<div class="page" id="page-use-cases" role="main">
+<div class="page" id="page-use-cases">
 <div class="inner-hero" data-nav="dark">
   <div class="section-inner">
     <div class="hero-eyebrow">Use Cases</div>
@@ -1179,10 +1092,12 @@ a{color:var(--accent);text-decoration:none}
 </div>
 
 <!-- ======================================================= -->
+<!-- ======================================================= -->
 <!-- PAGE: FOOD & BEVERAGE                                     -->
 <!-- ======================================================= -->
-<div class="page" id="page-food-and-beverage" role="main">
+<div class="page" id="page-food-and-beverage">
 
+<!-- HERO -->
 <div class="inner-hero" data-nav="dark" style="background:linear-gradient(160deg,#0d0d1a 0%,#1a3a0d 50%,#0a3d5c 100%);min-height:80vh;display:flex;align-items:center">
   <div class="section-inner" style="max-width:800px">
     <div class="hero-eyebrow" style="color:#81c784">The BOX for Food &amp; Beverage</div>
@@ -1199,12 +1114,14 @@ a{color:var(--accent);text-decoration:none}
   </div>
 </div>
 
+<!-- BIG QUOTE -->
 <div class="inner-section" style="background:var(--ink);padding:72px 0"><div class="section-inner" style="text-align:center;max-width:800px">
-  <div style="font-family:var(--font-display);font-size:5rem;color:rgba(255,255,255,0.04);line-height:1" aria-hidden="true">&ldquo;</div>
-  <blockquote style="font-family:var(--font-display);font-size:1.7rem;font-weight:500;line-height:1.5;color:#fff;font-style:italic;margin-top:-20px">I cannot adapt my production lines to the recipes. I need the recipes to adapt to the production lines.</blockquote>
+  <div style="font-family:var(--font-display);font-size:5rem;color:rgba(255,255,255,0.04);line-height:1">&ldquo;</div>
+  <p style="font-family:var(--font-display);font-size:1.7rem;font-weight:500;line-height:1.5;color:#fff;font-style:italic;margin-top:-20px">I cannot adapt my production lines to the recipes. I need the recipes to adapt to the production lines.</p>
   <p style="font-size:.9rem;color:rgba(255,255,255,0.5);margin-top:20px"><strong style="color:rgba(255,255,255,0.7)">Head of R&amp;D</strong> &mdash; Baked Goods Leader</p>
 </div></div>
 
+<!-- PAIN STATS -->
 <div class="inner-section" style="background:#fff"><div class="section-inner">
   <div class="section-label">The reality of F&amp;B innovation</div>
   <h2>Budgets are up. Processes haven't caught up.</h2>
@@ -1229,81 +1146,85 @@ a{color:var(--accent);text-decoration:none}
   <p style="font-size:.75rem;color:#bbb;font-style:italic;margin-top:14px;text-align:center">Sources: TraceGains 2025 NPD Report, industry benchmarks</p>
 </div></div>
 
+<!-- SOLUTION: 5 PILLARS -->
 <div class="inner-section" style="background:var(--warm)"><div class="section-inner">
   <div class="section-label">How The BOX solves it</div>
   <h2>AI-powered R&amp;D, NPD, and product strategy, built around your reality</h2>
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px">
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px">
-      <div style="font-size:1.4rem;margin-bottom:12px" aria-hidden="true">&#127919;</div>
+      <div style="font-size:1.4rem;margin-bottom:12px">&#127919;</div>
       <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Constraints-first ideation</h3>
       <p style="font-size:.88rem;color:var(--muted);line-height:1.6">Your production lines, ingredients, regulations, and budget are the starting point. Ideas are born feasible. R&amp;D never wastes cycles on dead-on-arrival concepts.</p>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px">
-      <div style="font-size:1.4rem;margin-bottom:12px" aria-hidden="true">&#129514;</div>
+      <div style="font-size:1.4rem;margin-bottom:12px">&#129514;</div>
       <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Food Science Agent</h3>
       <p style="font-size:.88rem;color:var(--muted);line-height:1.6">Formulation direction, competitor ingredient analysis, regulatory status checks. Connected to sector-specific databases. 80% of what a food science consultant gives you, instantly.</p>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px">
-      <div style="font-size:1.4rem;margin-bottom:12px" aria-hidden="true">&#9889;</div>
+      <div style="font-size:1.4rem;margin-bottom:12px">&#9889;</div>
       <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Brief to validated concept in weeks</h3>
       <p style="font-size:.88rem;color:var(--muted);line-height:1.6">Research, opportunity generation, ideation, enrichment, financial estimates, prioritization. What took 3-4 agencies and 4-6 months in one connected flow.</p>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px">
-      <div style="font-size:1.4rem;margin-bottom:12px" aria-hidden="true">&#128200;</div>
+      <div style="font-size:1.4rem;margin-bottom:12px">&#128200;</div>
       <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Product strategy intelligence</h3>
       <p style="font-size:.88rem;color:var(--muted);line-height:1.6">Positioning suggestions, competitive landscape mapping, target market analysis. Marketing gets actionable intelligence alongside R&amp;D feasibility. Product and commercial strategies develop in parallel.</p>
     </div>
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 24px;grid-column:1 / -1">
-      <div style="font-size:1.4rem;margin-bottom:12px" aria-hidden="true">&#128172;</div>
+      <div style="font-size:1.4rem;margin-bottom:12px">&#128172;</div>
       <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:8px">Digital twins for concept testing</h3>
       <p style="font-size:.88rem;color:var(--muted);line-height:1.6">Test product concepts against AI recreations of your target consumers before investing in R&amp;D. 85% accuracy (Stanford). Pricing, taste positioning, packaging, market fit. At a fraction of the cost and time of traditional consumer panels.</p>
     </div>
   </div>
 </div></div>
 
+<!-- USE CASES AS QUOTE CARDS -->
 <div class="inner-section"><div class="section-inner">
   <div class="section-label">F&amp;B use cases</div>
   <h2>Real challenges from innovation, R&amp;D, and NPD leaders</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px">
-    <blockquote style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
-      <p style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Create an innovative plant-based beverage for Gen-Z on our under-utilized production line."</p>
-      <footer style="font-size:.8rem;color:var(--muted);margin-top:10px">VP Innovation &mdash; European F&amp;B</footer>
-    </blockquote>
-    <blockquote style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
-      <p style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Identify 3 new revenue streams from coffee byproducts without CapEx."</p>
-      <footer style="font-size:.8rem;color:var(--muted);margin-top:10px">Head of R&amp;D &mdash; Specialty Coffee</footer>
-    </blockquote>
-    <blockquote style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
-      <p style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Develop a clean-label snack line at 35% margins within our supply chain."</p>
-      <footer style="font-size:.8rem;color:var(--muted);margin-top:10px">Director of NPD &mdash; Consumer Goods</footer>
-    </blockquote>
-    <blockquote style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
-      <p style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Find functional beverage opportunities in nootropics for our bottling capabilities."</p>
-      <footer style="font-size:.8rem;color:var(--muted);margin-top:10px">Head of Innovation &mdash; Beverage Co.</footer>
-    </blockquote>
+    <div style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
+      <div style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Create an innovative plant-based beverage for Gen-Z on our under-utilized production line."</div>
+      <div style="font-size:.8rem;color:var(--muted);margin-top:10px">VP Innovation &mdash; European F&amp;B</div>
+    </div>
+    <div style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
+      <div style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Identify 3 new revenue streams from coffee byproducts without CapEx."</div>
+      <div style="font-size:.8rem;color:var(--muted);margin-top:10px">Head of R&amp;D &mdash; Specialty Coffee</div>
+    </div>
+    <div style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
+      <div style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Develop a clean-label snack line at 35% margins within our supply chain."</div>
+      <div style="font-size:.8rem;color:var(--muted);margin-top:10px">Director of NPD &mdash; Consumer Goods</div>
+    </div>
+    <div style="background:var(--accent-light);border-radius:14px;padding:28px 24px;border-left:4px solid var(--accent)">
+      <div style="font-family:var(--font-display);font-size:.95rem;font-weight:600;font-style:italic;line-height:1.5">"Find functional beverage opportunities in nootropics for our bottling capabilities."</div>
+      <div style="font-size:.8rem;color:var(--muted);margin-top:10px">Head of Innovation &mdash; Beverage Co.</div>
+    </div>
   </div>
 </div></div>
 
+<!-- SOCIAL PROOF -->
 <div class="inner-section" style="background:var(--warm)"><div class="section-inner">
-  <blockquote style="background:#fff;border-radius:20px;padding:36px 32px;border:1px solid var(--border);max-width:640px;margin:0 auto">
-    <p style="font-family:var(--font-display);font-size:1.15rem;font-weight:500;line-height:1.55;font-style:italic;margin-bottom:16px">"Every time I see the results I'm astounded by what is possible. This is truly a revolution in how we do innovation."</p>
-    <footer style="font-size:.85rem"><strong>VP Innovation</strong> &mdash; US FMCG Leader</footer>
-  </blockquote>
+  <div style="background:#fff;border-radius:20px;padding:36px 32px;border:1px solid var(--border);max-width:640px;margin:0 auto">
+    <div style="font-family:var(--font-display);font-size:1.15rem;font-weight:500;line-height:1.55;font-style:italic;margin-bottom:16px">"Every time I see the results I'm astounded by what is possible. This is truly a revolution in how we do innovation."</div>
+    <div style="font-size:.85rem"><strong>VP Innovation</strong> &mdash; US FMCG Leader</div>
+  </div>
 </div></div>
 
+<!-- FINAL CTA -->
 <div class="inner-section" style="background:linear-gradient(160deg,#0d0d1a 0%,#1a237e 60%,#0a3d5c 100%);color:#fff;text-align:center;padding:80px 0"><div class="section-inner">
   <h2 style="color:#fff;font-family:var(--font-display);font-size:2.2rem;line-height:1.3;max-width:600px;margin:0 auto">See your next product in weeks, not months.</h2>
   <p style="color:rgba(255,255,255,0.55);margin:16px auto 32px;max-width:500px">Book a 30-minute demo with a real F&amp;B challenge. We'll show you what The BOX finds.</p>
   <button class="btn-primary" onclick="goTo('demo')" style="font-size:1rem;padding:16px 40px;background:linear-gradient(135deg,#5c6bc0,#00695c);color:#fff;border:none;box-shadow:0 0 24px rgba(92,107,192,0.4)">Book Your F&amp;B Demo &rarr;</button>
+  
 </div></div>
 
 </div>
 
-<!-- ======================================================= -->
 <!-- PAGE: PRICING                                             -->
 <!-- ======================================================= -->
-<div class="page" id="page-pricing" role="main">
+<div class="page" id="page-pricing">
 <div class="inner-hero" data-nav="dark">
   <div class="section-inner">
     <div class="hero-eyebrow">Pricing</div>
@@ -1390,7 +1311,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: RESOURCES                                           -->
 <!-- ======================================================= -->
-<div class="page" id="page-resources" role="main">
+<div class="page" id="page-resources">
 <div class="inner-hero" data-nav="dark">
   <div class="section-inner">
     <div class="hero-eyebrow">Resources</div>
@@ -1415,7 +1336,7 @@ a{color:var(--accent);text-decoration:none}
   </ul>
   <h2 style="margin-top:40px">Blog</h2>
   <p>Insights on AI-powered innovation, constraint-driven thinking, digital twins, NPD acceleration, and the future of R&amp;D.</p>
-  <p style="margin-top:12px"><a href="https://www.theboxinnovation.ai/blog" target="_blank" rel="noopener" style="font-weight:700;font-size:.95rem">Read the blog &rarr;</a></p>
+  <p style="margin-top:12px"><a href="https://www.theboxinnovation.ai/blog" target="_blank" style="font-weight:700;font-size:.95rem">Read the blog &rarr;</a></p>
   <h2 style="margin-top:40px">Webinars &amp; Videos</h2>
   <ul><li>Platform walkthrough video</li><li>Monthly "Innovation in the Age of AI" webinar series</li><li>Case study deep dives with innovation, R&amp;D, and marketing leaders</li></ul>
   <h2 style="margin-top:40px">Security</h2>
@@ -1426,7 +1347,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: APPROACH                                            -->
 <!-- ======================================================= -->
-<div class="page" id="page-approach" role="main">
+<div class="page" id="page-approach">
 <div class="inner-hero" data-nav="dark">
   <div class="section-inner">
     <div class="hero-eyebrow">Our Approach</div>
@@ -1459,7 +1380,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: ABOUT                                               -->
 <!-- ======================================================= -->
-<div class="page" id="page-about" role="main">
+<div class="page" id="page-about">
 <div class="inner-hero" data-nav="dark">
   <div class="section-inner">
     <div class="hero-eyebrow">About Quartz Labs</div>
@@ -1502,7 +1423,7 @@ a{color:var(--accent);text-decoration:none}
 <!-- ======================================================= -->
 <!-- PAGE: CONSTRAINTS                                         -->
 <!-- ======================================================= -->
-<div class="page" id="page-constraints" role="main">
+<div class="page" id="page-constraints">
 <div class="inner-hero" data-nav="dark" style="background:linear-gradient(135deg,#0d0d1a 0%,#1a1a3a 100%)">
   <div class="section-inner">
     <div class="hero-eyebrow">Our Methodology</div>
@@ -1530,10 +1451,12 @@ a{color:var(--accent);text-decoration:none}
 </div></div>
 </div>
 
+
+
 <!-- ======================================================= -->
-<!-- PAGE: CONSULTANCIES                                       -->
+<!-- PAGE: CONSULTANCIES & AGENCIES                            -->
 <!-- ======================================================= -->
-<div class="page" id="page-consultancies" role="main">
+<div class="page" id="page-consultancies">
 <div class="inner-hero" data-nav="dark" style="background:linear-gradient(135deg,#0d0d1a 0%,#2a1a3a 100%)">
   <div class="section-inner">
     <div class="hero-eyebrow">The BOX for Consultancies &amp; Agencies</div>
@@ -1554,14 +1477,19 @@ a{color:var(--accent);text-decoration:none}
 <div class="inner-section" style="background:var(--warm)"><div class="section-inner">
   <div class="section-label">Five ways agencies use The BOX</div>
   <h2>Surface the best opportunities to propose to your clients</h2>
+
   <h3>1. Pre-pitch intelligence</h3>
   <p>Run The BOX on a prospect's challenge before the meeting. Walk in with 50 concrete, constraint-aware ideas and a prioritized shortlist. Win the project because you're already delivering value on day zero.</p>
+
   <h3>2. Client workshop superpower</h3>
   <p>Use The BOX in real-time during innovation workshops. Generate, enrich, and prioritize ideas while the client is in the room. Compress a 3-month engagement into a 3-day sprint. Clients leave with a validated pipeline, not a deck of recommendations.</p>
+
   <h3>3. Scale without hiring</h3>
   <p>AI agents handle the research and enrichment heavy-lifting: market scanning, competitor analysis, business case modeling, expert enrichment. Your senior consultants focus on what humans do best: strategy, facilitation, and client relationships.</p>
+
   <h3>4. Continuous client value</h3>
   <p>Keep The BOX running between engagements. The Knowledge Base continuously surfaces new opportunities relevant to your client's constraints. Proactively propose new initiatives based on fresh signals. Turn one-off projects into ongoing advisory relationships.</p>
+
   <h3>5. Open innovation management</h3>
   <p>Run org-wide idea collection campaigns for enterprise clients. Ideas from across their organization flow into The BOX's enrichment and prioritization pipeline. Manage the full funnel from raw submissions to stage-gated concepts.</p>
 </div></div>
@@ -1596,14 +1524,15 @@ a{color:var(--accent);text-decoration:none}
 <div class="inner-section" style="background:var(--ink);color:#fff;text-align:center"><div class="section-inner">
   <h2 style="color:#fff;font-family:var(--font-display);font-size:2rem">Become the consultancy that brings AI-powered innovation capability. Not just advice.</h2>
   <p style="color:rgba(255,255,255,0.6);margin-bottom:28px">Book a 30-minute demo. Bring a real client challenge. We'll show you what The BOX finds.</p>
-  <button class="btn-primary" style="font-size:1rem;padding:16px 36px" onclick="goTo('demo')">Book Your Agency Demo &rarr;</button>
+  <button class="btn-primary" style="font-size:1rem;padding:16px 36px">Book Your Agency Demo &rarr;</button>
 </div></div>
 </div>
+
 
 <!-- ======================================================= -->
 <!-- PAGE: BOOK A DEMO                                         -->
 <!-- ======================================================= -->
-<div class="page" id="page-demo" role="main">
+<div class="page" id="page-demo">
 <div class="inner-hero" data-nav="dark" style="background:linear-gradient(160deg,#0d0d1a 0%,#1a237e 60%,#0a3d5c 100%);min-height:auto;padding:100px 0 60px">
   <div class="section-inner">
     <div class="hero-eyebrow">Book a Demo</div>
@@ -1615,32 +1544,37 @@ a{color:var(--accent);text-decoration:none}
 <div class="inner-section" style="background:#fff;padding:60px 0"><div class="section-inner">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
 
+    <!-- LEFT: Form -->
     <div>
       <h2 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;margin-bottom:8px">Request your demo</h2>
       <p style="color:var(--muted);margin-bottom:32px;font-size:.92rem">We'll prepare a tailored session based on your inputs below.</p>
 
       <div style="display:flex;flex-direction:column;gap:20px">
+
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
           <div>
-            <label for="fname" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">First name *</label>
-            <input id="fname" type="text" name="first_name" autocomplete="given-name" placeholder="Jonathan" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
+            <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">First name *</label>
+            <input type="text" placeholder="Jonathan" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
           </div>
           <div>
-            <label for="lname" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Last name *</label>
-            <input id="lname" type="text" name="last_name" autocomplete="family-name" placeholder="Smith" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
+            <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Last name *</label>
+            <input type="text" placeholder="Smith" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
           </div>
         </div>
+
         <div>
-          <label for="email" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Work email *</label>
-          <input id="email" type="email" name="email" autocomplete="work email" placeholder="jonathan@company.com" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Work email *</label>
+          <input type="email" placeholder="jonathan@company.com" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
         </div>
+
         <div>
-          <label for="company" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Company name *</label>
-          <input id="company" type="text" name="company" autocomplete="organization" placeholder="Acme Foods" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Company name *</label>
+          <input type="text" placeholder="Acme Foods" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'">
         </div>
+
         <div>
-          <label for="role" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Your role *</label>
-          <select id="role" name="role" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Your role *</label>
+          <select style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
             <option value="">Select your role</option>
             <option>VP / Director Innovation</option>
             <option>VP / Director R&amp;D</option>
@@ -1653,9 +1587,10 @@ a{color:var(--accent);text-decoration:none}
             <option>Other</option>
           </select>
         </div>
+
         <div>
-          <label for="industry" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Industry *</label>
-          <select id="industry" name="industry" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Industry *</label>
+          <select style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
             <option value="">Select your industry</option>
             <option>Food &amp; Beverage</option>
             <option>Coffee / Tea / Beverages</option>
@@ -1668,9 +1603,10 @@ a{color:var(--accent);text-decoration:none}
             <option>Other</option>
           </select>
         </div>
+
         <div>
-          <label for="revenue" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Company size (approx. revenue)</label>
-          <select id="revenue" name="company_revenue" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Company size (approx. revenue)</label>
+          <select style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
             <option value="">Select range</option>
             <option>Under $50M</option>
             <option>$50M - $250M</option>
@@ -1679,9 +1615,10 @@ a{color:var(--accent);text-decoration:none}
             <option>$5B+</option>
           </select>
         </div>
+
         <div>
-          <label for="maturity" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Innovation maturity</label>
-          <select id="maturity" name="innovation_maturity" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">Innovation maturity</label>
+          <select style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg fill=\'%236b6b7b\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/></svg>');background-repeat:no-repeat;background-position:right 12px center;background-size:18px;cursor:pointer">
             <option value="">How would you describe your process?</option>
             <option>Ad hoc: innovation happens but there is no formal process</option>
             <option>Emerging: we have some structure but it is inconsistent</option>
@@ -1690,46 +1627,50 @@ a{color:var(--accent);text-decoration:none}
             <option>Optimized: continuous improvement, deeply embedded</option>
           </select>
         </div>
+
         <div>
-          <label for="challenge" style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">What challenge would you like to explore in the demo?</label>
-          <textarea id="challenge" name="challenge" rows="3" placeholder="e.g. We need to find new revenue streams from coffee byproducts without CapEx investment" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;resize:vertical;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'"></textarea>
+          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px">What challenge would you like to explore in the demo?</label>
+          <textarea rows="3" placeholder="e.g. We need to find new revenue streams from coffee byproducts without CapEx investment" style="width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);outline:none;resize:vertical;transition:border-color .2s" onfocus="this.style.borderColor='#1a237e'" onblur="this.style.borderColor='#e0ddd6'"></textarea>
         </div>
-        <button type="submit" class="btn-primary" style="width:100%;padding:16px;font-size:1rem;margin-top:8px;cursor:pointer" onclick="alert('In production this connects to Calendly / your CRM. For now, the form captures the data.')">Book My Demo &rarr;</button>
+
+        <button class="btn-primary" style="width:100%;padding:16px;font-size:1rem;margin-top:8px;cursor:pointer" onclick="alert('In production this connects to Calendly / your CRM. For now, the form captures the data.')">Book My Demo &rarr;</button>
+
         <p style="font-size:.75rem;color:#999;text-align:center;margin-top:4px">We'll email you within 24 hours with available times. No spam, ever.</p>
       </div>
     </div>
 
+    <!-- RIGHT: What to expect + social proof -->
     <div>
       <div style="background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:32px 28px;margin-bottom:24px">
         <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:16px">What to expect</h3>
         <div style="display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e" aria-hidden="true">1</div>
+            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e">1</div>
             <div style="font-size:.88rem;line-height:1.5"><strong>Your challenge, live.</strong> We run The BOX on the challenge you describe above. Real insights, real ideas, real constraints.</div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e" aria-hidden="true">2</div>
+            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e">2</div>
             <div style="font-size:.88rem;line-height:1.5"><strong>Constraint-driven ideation.</strong> See how ideas are filtered through your production, regulatory, and budget reality.</div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e" aria-hidden="true">3</div>
+            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e">3</div>
             <div style="font-size:.88rem;line-height:1.5"><strong>Expert enrichment.</strong> Watch the Food Science, Marketing, and Financial agents add depth to every concept.</div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start">
-            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e" aria-hidden="true">4</div>
+            <div style="width:28px;height:28px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;font-weight:700;color:#1a237e">4</div>
             <div style="font-size:.88rem;line-height:1.5"><strong>Your next step.</strong> Walk away with a prioritized shortlist and a clear picture of how The BOX fits your process.</div>
           </div>
         </div>
       </div>
 
-      <blockquote style="background:var(--ink);border-radius:16px;padding:28px 24px;margin-bottom:24px">
-        <p style="font-family:var(--font-display);font-size:1rem;font-weight:500;line-height:1.6;color:#fff;font-style:italic">"Every time I see the results I'm astounded by what is possible. This is truly a revolution in how we do innovation."</p>
-        <footer style="font-size:.82rem;color:rgba(255,255,255,0.5);margin-top:12px"><strong style="color:rgba(255,255,255,0.7)">VP Innovation</strong> &mdash; US FMCG Leader</footer>
-      </blockquote>
+      <div style="background:var(--ink);border-radius:16px;padding:28px 24px;margin-bottom:24px">
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:500;line-height:1.6;color:#fff;font-style:italic">"Every time I see the results I'm astounded by what is possible. This is truly a revolution in how we do innovation."</div>
+        <div style="font-size:.82rem;color:rgba(255,255,255,0.5);margin-top:12px"><strong style="color:rgba(255,255,255,0.7)">VP Innovation</strong> &mdash; US FMCG Leader</div>
+      </div>
 
       <div style="background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:24px 28px">
         <div style="display:flex;gap:16px;align-items:center;margin-bottom:16px">
-          <div style="display:flex" aria-hidden="true">
+          <div style="display:flex">
             <div style="width:32px;height:32px;border-radius:50%;background:#1a237e;border:2px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.65rem;font-weight:700">WR</div>
             <div style="width:32px;height:32px;border-radius:50%;background:#0a3d5c;border:2px solid #fff;margin-left:-8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.65rem;font-weight:700">ST</div>
             <div style="width:32px;height:32px;border-radius:50%;background:#303f9f;border:2px solid #fff;margin-left:-8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.65rem;font-weight:700">ZF</div>
@@ -1751,31 +1692,32 @@ a{color:var(--accent);text-decoration:none}
           <div style="font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:var(--ink)">30 min</div>
           <div style="font-size:.72rem;color:var(--muted)">Demo length</div>
         </div>
-        <div style="width:1px;height:36px;background:var(--border)" aria-hidden="true"></div>
+        <div style="width:1px;height:36px;background:var(--border)"></div>
         <div style="text-align:center">
           <div style="font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:var(--ink)">Your brief</div>
           <div style="font-size:.72rem;color:var(--muted)">Not a generic deck</div>
         </div>
-        <div style="width:1px;height:36px;background:var(--border)" aria-hidden="true"></div>
+        <div style="width:1px;height:36px;background:var(--border)"></div>
         <div style="text-align:center">
           <div style="font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:var(--ink)">7-day trial</div>
           <div style="font-size:.72rem;color:var(--muted)">No credit card</div>
         </div>
       </div>
+
     </div>
   </div>
 </div></div>
 </div>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer" role="contentinfo">
+<!-- ===== FOOTER (global) ===== -->
+<footer class="footer">
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand"><div class="footer-brand-name">The BOX</div><p>AI-powered, human-centered innovation platform by Quartz Labs.</p></div>
-      <div class="footer-col"><h4>Product</h4><a onclick="goTo('home')">Platform</a><a onclick="goTo('how-it-works')">How It Works</a><a onclick="goTo('pricing')">Pricing</a><a onclick="goTo('demo')">Request Demo</a></div>
+      <div class="footer-col"><h4>Product</h4><a onclick="goTo('home')">Platform</a><a onclick="goTo('how-it-works')">How It Works</a><a onclick="goTo('pricing')">Pricing</a><a onclick="goTo('home')">Request Demo</a></div>
       <div class="footer-col"><h4>Solutions</h4><a onclick="goTo('food-and-beverage')">Food &amp; Beverage</a><a onclick="goTo('use-cases')">Consumer Goods</a><a onclick="goTo('consultancies')">Consultancies</a><a onclick="goTo('approach')">Our Approach</a></div>
       <div class="footer-col"><h4>Free Tools</h4><a onclick="goTo('resources')">Food Science Agent</a><a onclick="goTo('resources')">Ideation Agent</a><a onclick="goTo('resources')">Business Case Calc</a><a onclick="goTo('resources')">Trend Radar</a></div>
-      <div class="footer-col"><h4>Company</h4><a onclick="goTo('about')">About</a><a href="https://www.theboxinnovation.ai/blog" target="_blank" rel="noopener">Blog</a><a href="https://www.linkedin.com/company/quartz-labs" target="_blank" rel="noopener">LinkedIn</a><a onclick="goTo('constraints')">Methodology</a></div>
+      <div class="footer-col"><h4>Company</h4><a onclick="goTo('about')">About</a><a onclick="goTo('resources')">Blog</a><a href="#">LinkedIn</a><a onclick="goTo('constraints')">Methodology</a></div>
     </div>
     <div class="footer-bottom">
       <div>&copy; 2026 Quartz Labs LTD &mdash; 86-90 Paul Street, London, EC2A 4NE</div>
@@ -1784,83 +1726,7 @@ a{color:var(--accent);text-decoration:none}
   </div>
 </footer>
 
-<!-- Hidden: screen reader only utility class -->
-<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
-
 <script>
-// ============================
-// PAGE META CONFIG
-// ============================
-const pageMeta = {
-  'home': {
-    title: 'The BOX | AI-Powered Innovation Platform',
-    desc: 'The BOX brings together market data, customer intelligence, and your internal constraints to surface opportunities, generate ideas, and bring them to market. From brief to validated concept in weeks.',
-    canonical: 'https://www.theboxinnovation.ai/'
-  },
-  'how-it-works': {
-    title: 'How It Works | The BOX Innovation Platform',
-    desc: 'Seven steps from innovation challenge to validated, market-ready concept. Deep dive into the methodology powering constraint-driven R&D acceleration and NPD pipeline management.',
-    canonical: 'https://www.theboxinnovation.ai/how-it-works'
-  },
-  'use-cases': {
-    title: 'Use Cases | The BOX for F&B, CPG & Automotive Innovation',
-    desc: 'See how innovation, R&D, NPD, and marketing teams use The BOX to solve real challenges across Food & Beverage, Consumer Goods, Automotive, and Financial Services.',
-    canonical: 'https://www.theboxinnovation.ai/use-cases'
-  },
-  'food-and-beverage': {
-    title: 'AI Innovation Platform for Food & Beverage | The BOX',
-    desc: 'AI-powered R&D, NPD, and product strategy for F&B teams. Constraint-first ideation, Food Science Agent, digital twin testing. From brief to validated concept in weeks.',
-    canonical: 'https://www.theboxinnovation.ai/food-and-beverage'
-  },
-  'pricing': {
-    title: 'Pricing | The BOX Innovation Platform',
-    desc: 'Three plans for every innovation journey: Out of the Box self-service, White Gloves strategic partnership, Workshop Package for agencies, and Enterprise.',
-    canonical: 'https://www.theboxinnovation.ai/pricing'
-  },
-  'resources': {
-    title: 'Free Innovation Resources, Tools & Guides | The BOX',
-    desc: 'Free AI tools for innovation, R&D, and NPD teams: Food Science Agent, Ideation Agent, Business Case Calculator, Constraints Canvas, and more.',
-    canonical: 'https://www.theboxinnovation.ai/resources'
-  },
-  'approach': {
-    title: 'Our Approach to AI-Powered Innovation | The BOX',
-    desc: 'The four roles AI plays in innovation: Organizational Memory, The Crazy Junior, The Neutral Moderator, and Persona Simulator. Human-centered. Constraint-first.',
-    canonical: 'https://www.theboxinnovation.ai/approach'
-  },
-  'about': {
-    title: 'About Quartz Labs | The BOX Innovation Platform',
-    desc: 'Quartz Labs is a human-centered, AI-powered innovation company behind The BOX and The Mirror. Based in London. Trusted by WestRock Coffee, Strauss, ZF, and more.',
-    canonical: 'https://www.theboxinnovation.ai/about'
-  },
-  'constraints': {
-    title: 'Constraints-First Innovation Methodology | The BOX',
-    desc: 'The best innovations happen because of constraints, not despite them. Learn why we call it The BOX and how Goal + 5 Constraints = Breakthrough.',
-    canonical: 'https://www.theboxinnovation.ai/methodology'
-  },
-  'consultancies': {
-    title: 'The BOX for Innovation Consultancies & Agencies',
-    desc: 'Walk into every pitch with 50 constraint-aware ideas. Scale without hiring. Surface better opportunities for your clients with AI-powered workshop intelligence.',
-    canonical: 'https://www.theboxinnovation.ai/consultancies'
-  },
-  'demo': {
-    title: 'Book a Demo | The BOX Innovation Platform',
-    desc: 'See The BOX on your real innovation challenge. 30 minutes. Not a generic walkthrough. Book your tailored demo today.',
-    canonical: 'https://www.theboxinnovation.ai/demo'
-  }
-};
-
-function updateMetaTags(page) {
-  const m = pageMeta[page] || pageMeta['home'];
-  document.title = m.title;
-  document.querySelector('meta[name="description"]').setAttribute('content', m.desc);
-  document.querySelector('link[rel="canonical"]').setAttribute('href', m.canonical);
-  document.querySelector('meta[property="og:title"]').setAttribute('content', m.title);
-  document.querySelector('meta[property="og:description"]').setAttribute('content', m.desc);
-  document.querySelector('meta[property="og:url"]').setAttribute('content', m.canonical);
-  document.querySelector('meta[name="twitter:title"]').setAttribute('content', m.title);
-  document.querySelector('meta[name="twitter:description"]').setAttribute('content', m.desc);
-}
-
 // ============================
 // SPA ROUTER
 // ============================
@@ -1870,27 +1736,14 @@ function goTo(page) {
   if (target) target.classList.add('active');
   window.scrollTo({ top: 0, behavior: 'instant' });
   updateNav();
-  updateMetaTags(page);
-  // Push to history so back/forward works
-  history.pushState({ page }, '', '#' + page);
 }
-
-// Handle browser back/forward
-window.addEventListener('popstate', (e) => {
-  const page = (e.state && e.state.page) || 'home';
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  const target = document.getElementById('page-' + page);
-  if (target) target.classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'instant' });
-  updateNav();
-  updateMetaTags(page);
-});
 
 // ============================
 // NAV: DARK ON TOP, LIGHT ON SCROLL
 // ============================
 const nav = document.getElementById('mainNav');
 function updateNav() {
+  const scrollY = window.scrollY;
   const activePage = document.querySelector('.page.active');
   const hero = activePage ? activePage.querySelector('[data-nav="dark"]') || activePage.querySelector('.hero') || activePage.querySelector('.inner-hero') : null;
   let heroBottom = 100;
@@ -1920,28 +1773,36 @@ const numCards = stickyCards.length;
 function updateStackingCards() {
   if (!stackTrack) return;
   const trackRect = stackTrack.getBoundingClientRect();
+  const trackTop = -trackRect.top;
   const trackHeight = stackTrack.offsetHeight;
   const segmentHeight = trackHeight / numCards;
-  const trackTop = -trackRect.top;
 
   stickyCards.forEach((sticky, i) => {
     const card = sticky.querySelector('.stacking-card');
     const cardStart = i * segmentHeight;
+    const cardEnd = (i + 1) * segmentHeight;
     const progress = (trackTop - cardStart) / segmentHeight;
 
     if (i < numCards - 1 && progress > 0.7) {
       const scaleProgress = Math.min((progress - 0.7) / 0.3, 1);
-      card.style.transform = `scale(${1 - scaleProgress * 0.08}) translateY(${scaleProgress * -20}px)`;
-      card.style.opacity = 1 - scaleProgress * 0.6;
+      const scale = 1 - (scaleProgress * 0.08);
+      const yShift = scaleProgress * -20;
+      const opacity = 1 - (scaleProgress * 0.6);
+      card.style.transform = `scale(${scale}) translateY(${yShift}px)`;
+      card.style.opacity = opacity;
     } else {
       card.style.transform = 'scale(1) translateY(0)';
       card.style.opacity = 1;
     }
+
+    // z-index: later cards on top
     sticky.style.zIndex = i + 1;
   });
 }
+
 window.addEventListener('scroll', updateStackingCards, { passive: true });
 updateStackingCards();
+
 
 // ============================
 // CASE STUDY SLIDER
@@ -1956,8 +1817,6 @@ function initDots() {
   for (let i = 0; i < totalSlides; i++) {
     const dot = document.createElement('div');
     dot.className = 'case-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('role', 'tab');
-    dot.setAttribute('aria-label', 'Case study ' + (i + 1));
     dot.onclick = () => goToSlide(i);
     caseDots.appendChild(dot);
   }
@@ -1969,23 +1828,30 @@ function goToSlide(n) {
   if (caseDots) {
     caseDots.querySelectorAll('.case-dot').forEach((d, i) => {
       d.className = 'case-dot' + (i === currentSlide ? ' active' : '');
-      d.setAttribute('aria-selected', i === currentSlide ? 'true' : 'false');
     });
   }
 }
 
 function slideCase(dir) { goToSlide(currentSlide + dir); }
 initDots();
+
+// Auto-advance every 6s
 setInterval(() => { if (caseTrack) slideCase(1); }, 6000);
 
+
 // ============================
-// FLOW STEP ANIMATIONS
+// FLOW STEP SCROLL ANIMATIONS
 // ============================
 const flowSteps = document.querySelectorAll('.flow-step');
 const flowObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
 }, { threshold: 0.2, rootMargin: '0px 0px -60px 0px' });
-flowSteps.forEach(s => flowObserver.observe(s));
+flowSteps.forEach(step => flowObserver.observe(step));
+
 </script>
 
 </body>
